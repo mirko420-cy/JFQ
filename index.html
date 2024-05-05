@@ -4,16 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juan Facundo Quiroga</title>
-  <link rel="shortcut icon" href="./Favicon/favicon_1.png">
-  <link rel="stylesheet" href="./stylo.css/estilo.css">
-  
-  
+  <link rel="shortcut icon" href="icon.ico">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="body1"><!--MODIFICADO EL BODY, TENIA MUCHO SCROLL-->
-    <div class="flex flex-col min-h-screen bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-pulse">
-  <header class="w-full h-20 flex items-center justify-between px-6 bg-white dark:bg-gray-800"><!--a .px-6 le cancele el p. left y right, por el srcroll que causba-->
-    <!--carrusel-->
-    <!--<div class="carousel-container">
+  <div class="flex flex-col min-h-screen bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-pulse">
+    <header class="w-full h-20 flex items-center justify-between px-6 bg-white dark:bg-gray-800">
+      <!--a .px-6 le cancele el p. left y right, por el srcroll que causba-->
+      <!--carrusel-->
+      <!--<div class="carousel-container">
       <button class="prev" onclick="izquierda()">&#10094;</button>
       <div class="carousel-slide">
         <img src="./img/naturaleza.jpg" alt="Imagen 1">
@@ -22,113 +21,89 @@
       </div>
       <button class="next" onclick="derecha()">&#10095;</button>
     </div> -->
-    
-    
-    <!--carrusel-->
-    <img class="img3" src="./img/municipalidad.jpg" alt="municipalidad">
-    <h1 class="text-2xl font-bold">Turismo y cultura en Juan Facundo Quiroga.</h1>
-
-
-
-    
-    <nav class="nav1">
-      
-      <ul class="ul1">
-       
-         <li class="Inicio"><a href="index.html">Inicio</a></li>
-        <li class="dropdown">
+      <!--carrusel-->
+      <img class="img3" src="images/municipalidad.jpg" alt="municipalidad">
+      <h1 class="text-2xl font-bold">Turismo y cultura en Juan Facundo Quiroga.</h1>
+      <nav class="nav1">
+        <ul class="ul1">
+          <li class="Inicio"><a href="index.html">Inicio</a></li>
+          <li class="dropdown">
             <a href="#">Servicios</a>
             <div class="dropdown-content1">
-                <a class="ponzio"  href="./donde/donde comer.html">-donde comer</a>
-                <a class="ponzio"  href="./donde/donde dormir.html">-donde dormir</a>
+              <a class="ponzio" href="pages/donde comer.html">-donde comer</a>
+              <a class="ponzio" href="pages/donde dormir.html">-donde dormir</a>
             </div>
-        </li>
-        <li class="dropdown">
+          </li>
+          <li class="dropdown">
             <a href="#">Atractivo</a>
             <div class="dropdown-content2">
-                <a class="ponzio" href="./que hacer/naturaleza.html">-naturaleza</a>
-                <a class="ponzio"  href="./que hacer/cultura.html">-cultura</a>
-                <a class="ponzio"  href="./que hacer/esparcimiento.html">-esparcimiento</a>
+              <a class="ponzio" href="pages/naturaleza.html">-naturaleza</a>
+              <a class="ponzio" href="pages/cultura.html">-cultura</a>
+              <a class="ponzio" href="pages/esparcimiento.html">-esparcimiento</a>
             </div>
-        </li>
-        <li class="dropdown">
+          </li>
+          <li class="dropdown">
             <a href="#">temporada</a>
             <div class="dropdown-content3">
-                <a class="ponzio"  href="./temporadas/verano.html">-verano</a>
-                <a class="ponzio"  href="./temporadas/primavera.html">-Primavera</a>
-                <a class="ponzio"  href="./temporadas/otoño.html">-otoño</a>
-                <a class="ponzio"  href="./temporadas/invierno.html">-invierno</a>
+              <a class="ponzio" href="pages/verano.html">-verano</a>
+              <a class="ponzio" href="pages/primavera.html">-Primavera</a>
+              <a class="ponzio" href="pages/otoño.html">-otoño</a>
+              <a class="ponzio" href="pages/invierno.html">-invierno</a>
             </div>
-        </li>
-       
-        
+          </li>
           <li class="dropdown"><a href="https://wa.link/oyino6"> contacto</li>
-            </a>
-        
-      
-    </ul>
-          </details>
+          </a>
+        </ul>
+        </details>
         </li>
-      </ul>
-    </nav>
-
-
-
-
-
-
-  </header>
-  <div class="flex flex-1">
-    <main class="p-6 w-full">
-      <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        <div>
+        </ul>
+      </nav>
+    </header>
+    <div class="flex flex-1">
+      <main class="p-6 w-full">
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div>
-            <a href=".que hacer/naturaleza.html">
-              <h3 class="title-naturaleza">Naturaleza</h3>
-            </a>
-            <p class="p-4f opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-              Disfruta de la belleza natural de Juan Facundo Quiroga.
-            </p>
-
-
-            <div class="carousel-container">
-              <button class="prev" onclick="prevSlide()">&#10094;</button>
-              <div class="carousel-slide" id="carousel1"> 
+            <div>
+              <a href="pages/naturaleza.html">
+                <h3 class="title-naturaleza">Naturaleza</h3>
+              </a>
+              <p class="p-4f opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                Disfruta de la belleza natural de Juan Facundo Quiroga.
+              </p>
+              <div class="carousel-container">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <div class="carousel-slide" id="carousel1">
                   <div class="image-wrapper">
-                      
-                    <a href="./que hacer/naturaleza/El elefante.html">
+
+                    <a href="pages/El elefante.html">
                       <div class="image-title">Malanzan</div>
-                      <img src="./img/malanzancc.jpg" alt="Image 1">
+                      <img src="images/malanzancc.jpg" alt="Image 1">
                   </div>
-                  <a href="./que hacer/naturaleza/guasamayo.html">
-                  <div class="image-wrapper">
-                    <div class="image-title">Solca</div>
-                      <img src="./img/solcac.jpg" alt="Image 2">
-                    </a>
-                  </div>
+                  <a href="pages/guasamayo.html">
+                    <div class="image-wrapper">
+                      <div class="image-title">Solca</div>
+                      <img src="images/solcac.jpg" alt="Image 2">
+                  </a>
+                </div>
 
-                  <a href="/Untitled-1.html">
+                <a href="pages/Untitled-1.html">
                   <div class="image-wrapper">
                     <div class="image-title">San Antonio</div>
-                      <img src="./img/sanantonio01.jpg" alt="Image 3">
-                    </a>
-                  </div>
-
-                  <a href="./que hacer/atilezx.html">
-                  <div class="image-wrapper">
-                    <div class="image-title">Atiles</div>
-                      <img src="./img/atiles01.jpg" alt="Image 4">
-                  </a>
-                  </div>
-                
+                    <img src="images/sanantonio01.jpg" alt="Image 3">
+                </a>
               </div>
-              <button class="next" onclick="nextSlide()">&#10095;</button>
+
+              <a href="pages/atilezx.html">
+                <div class="image-wrapper">
+                  <div class="image-title">Atiles</div>
+                  <img src="images/atiles01.jpg" alt="Image 4">
+              </a>
+            </div>
+
           </div>
-          
-            
-            
-         
-           <!--<div class="carousel-container">
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <!--<div class="carousel-container">
               <button class="prev" onclick="prevSlide()">&#10094;</button>
               <div class="carousel-slide" id="carousel1">
               
@@ -143,18 +118,7 @@
               </div>
               <button class="next" onclick="nextSlide()">&#10095;</button>
             </div>-->
-           
-        
-          
-          
-          
-         
-          
-         
-          
-          
-          
-          <!--<div class="relative w-full max-w-sm" role="region" aria-roledescription="carousel">
+    <!--<div class="relative w-full max-w-sm" role="region" aria-roledescription="carousel">
                <div class="overflow-hidden">
                 <div class="flex -ml-4" style="transform: translate3d(0px, 0px, 0px);">
                   <div role="group" aria-roledescription="slide" class="Image1-natu">
@@ -167,7 +131,7 @@
                     />  
                   
                   </div> -->
-                   <!--<div role="group" aria-roledescription="slide" class="Image2-natu">
+    <!--<div role="group" aria-roledescription="slide" class="Image2-natu">
                     <img
                       src="./img/naturaleza1.jpg"
                       width="300"
@@ -176,7 +140,7 @@
                       class="aspect-video object-cover rounded-md"
                     />
                   </div> -->
-                  <!--<div role="group" aria-roledescription="slide" class="Image3-natu">
+    <!--<div role="group" aria-roledescription="slide" class="Image3-natu">
                     <img
                       src="./img/naturaleza2.jpg"
                       width="300"
@@ -192,7 +156,7 @@
                 class="inline-flex items-center whitespace-nowrap shrink-0 justify-center text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm font-medium hover:bg-accent hover:text-accent-foreground absolute h-8 w-8 rounded-full -left-12 top-1/2 -translate-y-1/2"
                 disabled=""
               > -->
-               <!-- <svg
+    <!-- <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -229,45 +193,42 @@
               </button>
             </div>
           </div> -->
-          <div>
-            <h3 class="river">Cultura</h3>
-            <p class="p-4ff opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-              Descubre la rica cultura y tradiciones de Juan Facundo Quiroga.
-            </p>
-            <h5 class="messi">Los 4 lugares mas visitados...</h5>
-            <div class="carousel-container">
-              <button class="prev" onclick="prevSlide2()">&#10094;</button>
-              <div class="carousel-slide" id="carousel2">
-                <div class="image-wrapper">
-                  <a href="./que hacer/cultura.html">
-                    <div class="image-title">Flechas</div>
-                <img src="./img/flechas.jpg" alt="Image 5">
-                </div>
-                <div class="image-wrapper">
-                  <div class="image-title">Artesanias</div>
-                <img src="./img/artesanias.jpg" alt="Image 6">
-              </div>
-
-              <div class="image-wrapper">
-                <div class="image-title">Petroglifo en Guasamayo</div>
-                <img src="./img/petroguasayo.jpg" alt="Image 7">
-
-              </a>
-            </div>
-            
-            <div class="image-wrapper">
-              <a href="./que hacer/cultura.html">
-              <div class="image-title">Artesanias</div>
-            <img src="./img/comida.jpg" alt="Image 8">
-          </a>
+    <div>
+      <h3 class="river">Cultura</h3>
+      <p class="p-4ff opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+        Descubre la rica cultura y tradiciones de Juan Facundo Quiroga.
+      </p>
+      <h5 class="messi">Los 4 lugares mas visitados...</h5>
+      <div class="carousel-container">
+        <button class="prev" onclick="prevSlide2()">&#10094;</button>
+        <div class="carousel-slide" id="carousel2">
+          <div class="image-wrapper">
+            <a href="pages/cultura.html">
+              <div class="image-title">Flechas</div>
+              <img src="images/flechas.jpg" alt="Image 5">
           </div>
-              </div>
-              <button class="next" onclick="nextSlide2()">&#10095;</button>
-            </div>
-            
-        
-          
-             <!--<div class="relative w-full max-w-sm" role="region" aria-roledescription="carousel">
+          <div class="image-wrapper">
+            <div class="image-title">Artesanias</div>
+            <img src="images/artesanias.jpg" alt="Image 6">
+          </div>
+
+          <div class="image-wrapper">
+            <div class="image-title">Petroglifo en Guasamayo</div>
+            <img src="images/petroguasayo.jpg" alt="Image 7">
+
+            </a>
+          </div>
+
+          <div class="image-wrapper">
+            <a href="pages/cultura.html">
+              <div class="image-title">Artesanias</div>
+              <img src="images/comida.jpg" alt="Image 8">
+            </a>
+          </div>
+        </div>
+        <button class="next" onclick="nextSlide2()">&#10095;</button>
+      </div>
+      <!--<div class="relative w-full max-w-sm" role="region" aria-roledescription="carousel">
               <div class="overflow-hidden">
                 <div class="flex -ml-4" style="transform: translate3d(0px, 0px, 0px);">
                   <div role="group" aria-roledescription="slide" class="min-w-0 shrink-0 grow-0 basis-full pl-4">
@@ -343,38 +304,37 @@
               </button>
             </div>
           </div> -->
-          <div>
-            <h3 class="text-lg font-medium">Esparcimiento</h3>
-            <p class="p-4fff opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-              Descubre la rica cultura y tradiciones de Juan Facundo Quiroga.
-            </p>
-            <h5 class="messi">Los 4 lugares mas visitados...</h5>
-            <div class="carousel-container">
-              <button class="prev" onclick="prevSlide3()">&#10094;</button>
-              <div class="carousel-slide" id="carousel3">
-                <div class="image-wrapper">
-                  <a href="./esparcimiento.html">
-                    <div class="image-title">Estanque en Solca</div>
-                <img src="./img/estanque.jpg" alt="Image 9">
-              </div>
-              <div class="image-wrapper">
-                <div class="image-title">Título de la imagen 2</div>
-                <img src="./img/Esparcimiento11.jpg" alt="Image 10">
-              </div>
-              <div class="image-wrapper">
-                <div class="image-title">Título de la imagen 3</div>
-                <img src="./img/estanque2-0.jpg" alt="Image 11">
+      <div>
+        <h3 class="text-lg font-medium">Esparcimiento</h3>
+        <p class="p-4fff opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+          Descubre la rica cultura y tradiciones de Juan Facundo Quiroga.
+        </p>
+        <h5 class="messi">Los 4 lugares mas visitados...</h5>
+        <div class="carousel-container">
+          <button class="prev" onclick="prevSlide3()">&#10094;</button>
+          <div class="carousel-slide" id="carousel3">
+            <div class="image-wrapper">
+              <a href="pages/esparcimiento.html">
+                <div class="image-title">Estanque en Solca</div>
+                <img src="images/estanque.jpg" alt="Image 9">
+            </div>
+            <div class="image-wrapper">
+              <div class="image-title">Título de la imagen 2</div>
+              <img src="images/Esparcimiento11.jpg" alt="Image 10">
+            </div>
+            <div class="image-wrapper">
+              <div class="image-title">Título de la imagen 3</div>
+              <img src="images/estanque2-0.jpg" alt="Image 11">
               </a>
             </div>
             <div class="image-wrapper">
               <div class="image-title">Título de la imagen 2</div>
-              <img src="./img/telar.jpg" alt="Image 12">
+              <img src="images/telar.jpg" alt="Image 12">
             </div>
-              </div>
-              <button class="next" onclick="nextSlide3()">&#10095;</button>
-            </div>
-           
-             <!--<div class="relative w-full max-w-sm" role="region" aria-roledescription="carousel">
+          </div>
+          <button class="next" onclick="nextSlide3()">&#10095;</button>
+        </div>
+        <!--<div class="relative w-full max-w-sm" role="region" aria-roledescription="carousel">
               <div class="overflow-hidden">
                 <div class="flex -ml-4" style="transform: translate3d(0px, 0px, 0px);">
                   <div role="group" aria-roledescription="slide" class="min-w-0 shrink-0 grow-0 basis-full pl-4">
@@ -448,16 +408,18 @@
               </button>
             </div>
           </div> -->
-        </div>
+      </div>
       </section>
-      
       <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-        
         <div class="group rounded-lg overflow-hidden">
-          <a href="/donde/donde comer.html"><h2 class="comer">Dónde comer </h2></a>
-          <p class="p-22">Descubre los mejores lugares para desayunar, almorzar, merendar, cenar y tambien para tomarte un refresco en tu visita en juan Facundo Quiroga.</p>
-          <a href="/donde/donde comer.html"><div class="dondecomer"></div></a>
-         
+          <a href="pages/donde comer.html">
+            <h2 class="comer">Dónde comer </h2>
+          </a>
+          <p class="p-22">Descubre los mejores lugares para desayunar, almorzar, merendar, cenar y tambien para tomarte
+            un refresco en tu visita en juan Facundo Quiroga.</p>
+          <a href="pages/donde comer.html">
+            <div class="dondecomer"></div>
+          </a>
           <!--<img
             src="descarga.jpeg"
             alt="Comida"
@@ -466,15 +428,17 @@
             height="200"
             style="aspect-ratio: 200 / 200; object-fit: cover;"
           />-->
-          
         </div>
-        
         <div class="group rounded-lg overflow-hidden">
-          <a href="/donde/donde dormir.html"><h2 class="text-xl font-bold p-4">Dónde dormir</h2></a>
-        <p class="p-l">Descubre los mejores lugares para alojarte durante tu visita a Juan Facundo Quiroga.
-        </p>
-         <a href="/donde/donde dormir.html"><div class="dondedormir"></div></a>
-        <!-- <img
+          <a href="pages/donde dormir.html">
+            <h2 class="text-xl font-bold p-4">Dónde dormir</h2>
+          </a>
+          <p class="p-l">Descubre los mejores lugares para alojarte durante tu visita a Juan Facundo Quiroga.
+          </p>
+          <a href="pages/donde dormir.html">
+            <div class="dondedormir"></div>
+          </a>
+          <!-- <img
             src="descarga (1).jpeg"
             alt="Alojamiento"
             class="w-full h-48 object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-200"
@@ -487,107 +451,85 @@
       </section>
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="group rounded-lg overflow-hidden">
-         <a href="/temporadas/primavera.html"> <img
-            src="/img/primavera.jpg"
-            alt="Primavera"
-            class="w-full h-48 object-cover"
-            width="200"
-            height="200"
-            style="aspect-ratio: 200 / 200; object-fit: cover;"
-          /></a>
-          <a href="/temporadas/primavera.html"><h2 class="text-xl font-bold p-4">Primavera</h2></a>
+          <a href="pages/primavera.html"> <img src="images/primavera.jpg" alt="Primavera"
+              class="w-full h-48 object-cover" width="200" height="200"
+              style="aspect-ratio: 200 / 200; object-fit: cover;" /></a>
+          <a href="pages/primavera.html">
+            <h2 class="text-xl font-bold p-4">Primavera</h2>
+          </a>
           <p class="p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
             Disfruta de la belleza de la primavera en Juan Facundo Quiroga.
           </p>
         </div>
         <div class="group rounded-lg overflow-hidden">
-          <a href="/temporadas/verano.html"> <img 
-            src="./img/verano.jpg"
-            alt="Verano"
-            class="w-full h-48 object-cover"
-            width="200"
-            height="200"
-            style="aspect-ratio: 200 / 200; object-fit: cover;"
-          /></a>
-          <a href="/temporadas/verano.html"><h2 class="text-xl font-bold p-4">Verano</h2></a>
+          <a href="pages/verano.html"> <img src="images/verano.jpg" alt="Verano" class="w-full h-48 object-cover"
+              width="200" height="200" style="aspect-ratio: 200 / 200; object-fit: cover;" /></a>
+          <a href="pages/verano.html">
+            <h2 class="text-xl font-bold p-4">Verano</h2>
+          </a>
           <p class="p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
             Experimenta el vibrante verano en Juan Facundo Quiroga.
           </p>
         </div>
-       <div class="group rounded-lg overflow-hidden">
-         <a href="/temporadas/otoño.html"> <img
-            src="./img/otoño.jpg"
-            alt="Otoño"
-            class="w-full h-48 object-cover"
-            width="200"
-            height="200"
-            style="aspect-ratio: 200 / 200; object-fit: cover;"
-          /></a>
-          <a href="/temporadas/otoño.html"><h2 class="text-xl font-bold p-4">Otoño</h2></a>
+        <div class="group rounded-lg overflow-hidden">
+          <a href="pages/otoño.html"> <img src="images/otoño.jpg" alt="Otoño" class="w-full h-48 object-cover"
+              width="200" height="200" style="aspect-ratio: 200 / 200; object-fit: cover;" /></a>
+          <a href="pages/otoño.html">
+            <h2 class="text-xl font-bold p-4">Otoño</h2>
+          </a>
           <p class="p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
             Observa los colores cambiantes del otoño en Juan Facundo Quiroga.
           </p>
         </div>
         <div class="group rounded-lg overflow-hidden">
-          <a href="/temporadas/invierno.html"><img
-            src="./img/invierno.jpg"
-            alt="Invierno"
-            class="w-full h-48 object-cover"
-            width="200"
-            height="200"
-            style="aspect-ratio: 200 / 200; object-fit: cover;"
-          /></a>
-          <a href="/temporadas/invierno.html"><h2 class="text-xl font-bold p-4">Invierno</h2></a>
+          <a href="pages/invierno.html"><img src="images/invierno.jpg" alt="Invierno"
+              class="w-full h-48 object-cover" width="200" height="200"
+              style="aspect-ratio: 200 / 200; object-fit: cover;" /></a>
+          <a href="pages/invierno.html">
+            <h2 class="text-xl font-bold p-4">Invierno</h2>
+          </a>
           <p class="p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
             Siente la tranquilidad del invierno en Juan Facundo Quiroga.
           </p>
         </div>
       </section>
-    </main>
-  </div>
-
-  <form>
-    <div class="form-group">
-      <h2>Deja un comentario</h2>
-      <textarea class="form-control" rows="10"></textarea>
+      </main>
     </div>
-    <button type="submit" class="btn btn-primary">Enviar comentario</button>
-  </form>
-
-</div>
-
-
-
+    <form>
+      <div class="form-group">
+        <h2>Deja un comentario</h2>
+        <textarea class="form-control" rows="10"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar comentario</button>
+    </form>
+  </div>
   <footer class="footer-container">
     <h2 class="footer-title">Conoce más!</h2>
     <p class="footer-description">De Juan Facundo Quiroga</p>
     <p class="footer-info">Informe de la Oficina de Cultura</p>
     <div class="footer-icons">
-        <div class="icon-container">
-            <img src="./img/800 A.M - 1200 P.M.png" alt="Clock Icon" class="icon">
-            <p class="icon-title">Horario</p>
-            
-          </div>
-        <div class="icon-container">
-          <a href="http://surl.li/pzecn"></a> <img src="./icon/mapas-de-google.ico" alt="Map Icon" class="icon">
-            <p class="icon-title">Dirección</p>
-          </a>
-        </div>
-        <div class="icon-container">
-          <a href="https://mail.google.com/mail/u/0/#inbox"> <img src="./icon/gmail.png" alt="Email Icon" class="icon">
-            <p class="icon-title">Email</p>
-          </a>
-        </div>
-        <div class="icon-container">
-          <a href="https://wa.link/oyino6"><img src="./icon/llamada-telefonica.png" alt="Phone Icon" class="icon">
-            <p class="icon-title">Teléfono</p>
+      <div class="icon-container">
+        <img src="images/800 A.M - 1200 P.M.png" alt="Clock Icon" class="icon">
+        <p class="icon-title">Horario</p>
+      </div>
+      <div class="icon-container">
+        <a href="http://surl.li/pzecn"></a> <img src="images/mapas-de-google.ico" alt="Map Icon" class="icon">
+        <p class="icon-title">Dirección</p>
+        </a>
+      </div>
+      <div class="icon-container">
+        <a href="https://mail.google.com/mail/u/0/#inbox"> <img src="images/gmail.png" alt="Email Icon" class="icon">
+          <p class="icon-title">Email</p>
+        </a>
+      </div>
+      <div class="icon-container">
+        <a href="https://wa.link/oyino6"><img src="images/llamada-telefonica.png" alt="Phone Icon" class="icon">
+          <p class="icon-title">Teléfono</p>
         </a>
       </div>
     </div>
-</footer>
-
-<script src="./script/script.js"></script>
-
-  </body>
+  </footer>
+  <script src="./script/script.js"></script>
+</body>
 </div>
 </html>
