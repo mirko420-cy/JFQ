@@ -8,7 +8,11 @@
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 0px;
-    background-image: linear-gradient(to right, #2e6e3c, #c9cc18, #5a5421);
+    background-image: url(https://elcronistachepes.com.ar/wp-content/uploads/2022/02/133825_1556810250.jpg);
+    background-color: #f00012;
+    background-size: cover;
+    background-position: top;
+  background-attachment: fixed;
   }
   .ul1{
     Width:200px;
@@ -616,15 +620,19 @@
 }
 
 .footer-title {
-  font-size: 24px; /* Tamaño del título */
-  margin-bottom: 10px; /* Espacio inferior entre el título y la descripción */
+  text-align: center;
+  font-size: 54px; /* Tamaño del título */
+  margin-bottom: 40px; /* Espacio inferior entre el título y la descripción */
 }
 
 .footer-description {
+  text-align: center;
   font-style: italic; /* Estilo de letra cursiva para la descripción */
+  margin-bottom: 40px
 }
 
 .footer-info {
+  text-align: center;
   font-weight: bold; /* Texto en negrita para la información adicional */
 }
 
@@ -643,12 +651,15 @@
 .icon {
   width: 50px; /* Ancho del icono */
   height: 50px; /* Altura del icono */
-  margin-bottom: 5px; /* Espacio inferior entre el icono y el título */
+  margin-bottom: -80px; /* Espacio inferior entre el icono y el título */
 }
 
 .icon-title {
-  font-size: 14px; /* Tamaño del título del icono */
+  margin-bottom: -80px;
+  font-size: 24px; /* Tamaño del título del icono */
 }
+
+
 .wrapper {
   width: 100%;
   min-height: 100vh;
