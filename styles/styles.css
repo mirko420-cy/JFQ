@@ -965,10 +965,10 @@ button[type="submit"]:hover {
 /* Media Queries */
 @media screen and (max-width: 767px) {
   .ul1 {
-   /* width: 100%; */
-    height: auto;
-    
-  }
+    /* width: 100%; */
+     height: auto;
+     
+   }
   .footer-container {
     background-color: #fd0000;
     color: #fff;
