@@ -963,12 +963,17 @@ button[type="submit"]:hover {
 
 
 /* Media Queries */
-@media screen and (max-width: 1080px) and (max-height: 2400px) {
+@media screen and (max-width: 767px) {
   .ul1 {
    /* width: 100%; */
     height: auto;
     
   }
+  .footer-container {
+    background-color: #fd0000;
+    color: #fff;
+    padding: 20px;
+}
   .nav1 {
    /* width: 100%; */
     height: auto;
