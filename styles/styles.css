@@ -970,8 +970,8 @@ button[type="submit"]:hover {
     
   }
   .nav1 {
-   /* width: 100%; */
-    height: auto;
+   height: 70px;
+    width: 465px;
   }
   .Inicio a,
   .dropdown a,
