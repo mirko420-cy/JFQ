@@ -981,8 +981,8 @@ button[type="submit"]:hover {
     
   }
   .nav1 {
-   /* width: 100%; */
-    height: auto;
+    height: 50px;
+    width: 450px;
   }
   .Inicio a,
   .dropdown a,
