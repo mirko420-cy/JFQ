@@ -9,7 +9,18 @@
     margin-left: 0px;
     margin-bottom: 0px;
     background-image: url(https://elcronistachepes.com.ar/wp-content/uploads/2022/02/133825_1556810250.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
+
+  .opaco{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#ffcccc , transparent);
+  }
+
   .ul1{
     Width:200px;
     Height:250px;
