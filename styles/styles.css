@@ -151,6 +151,10 @@
     height: 70px;
     width: 400px;
   }
+  .nav88{
+    height: 70px;
+    width: 400px;
+  }
   
   .Inicio a {
     color:#0011f8;
@@ -968,6 +972,10 @@ button[type="submit"]:hover {
    /* width: 100%; */
     height: auto;
     
+  }
+  .nav88 {
+    height: 50px;
+    width: 450px;
   }
   .nav1 {
     height: 50px;
