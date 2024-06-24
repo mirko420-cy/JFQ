@@ -92,7 +92,23 @@ submitButton.addEventListener("click", function() {
   commentInput.value = "";
 });
 
+function initMap() {
+  // Coordenadas del lugar
+  var lugar = { lat: 12.992571201622615, lng: -66.60197115964398 };
 
+  // mapa
+  var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15, //zoom inicial del mapa
+      center: lugar // Centrar
+  });
+
+  // Marcador en las coordenadas del lugar
+  var marker = new google.maps.Marker({
+      position: lugar,
+      map: map,
+      title: 'Ubicación del Lugar'
+  });
+}
 
 
 
