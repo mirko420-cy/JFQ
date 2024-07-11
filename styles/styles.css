@@ -162,6 +162,10 @@
     height: 70px;
     width: 400px;
   }
+  .nav88{
+    height: 70px;
+    width: 400px;
+  }
   
   .Inicio a {
     color:#0011f8;
@@ -974,15 +978,19 @@ button[type="submit"]:hover {
 
 
 /* Media Queries */
-@media screen and (max-width: 1080px) and (max-height: 2400px) {
+@media screen and (max-width: 1000px) and (max-height: 2400px) {
   .ul1 {
    /* width: 100%; */
     height: auto;
     
   }
-  .nav1 {
+  .nav88 {
     height: 50px;
     width: 450px;
+  }
+  .nav1 {
+    height: 50px;
+    width: 460px;
   }
   .Inicio a,
   .dropdown a,
