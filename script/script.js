@@ -98,7 +98,7 @@ function initMap() {
 
   // mapa
   var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 15, //zoom inicial del mapa
+      zoom: 10, //zoom inicial del mapa
       center: lugar // Centrar
   });
 
@@ -106,7 +106,6 @@ function initMap() {
   var marker = new google.maps.Marker({
       position: lugar,
       map: map,
-      title: 'Ubicación del Lugar'
   });
 }
 
