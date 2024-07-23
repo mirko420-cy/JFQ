@@ -111,6 +111,24 @@ function initMap() {
 }
 
 
+// Manejo de eventos y lógica de comentarios
+
+document.getElementById('comment-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  var name = document.getElementById('name').value;
+  var comment = document.getElementById('comment').value;
+  addComment(name, comment);
+  document.getElementById('comment-form').reset();
+});
+
+function addComment(name, comment) {
+  var commentSection = document.getElementById('comment-section');
+  var newComment = document.createElement('div');
+  newComment.innerHTML = '<strong>' + name + '</strong>: ' + comment + '<hr>';
+  commentSection.appendChild(newComment);
+}
+
+
 
 
 
