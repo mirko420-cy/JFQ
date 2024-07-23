@@ -1085,7 +1085,7 @@ button[type="submit"]:hover {
   }
 }
 
-#map {
+#map  {
   height: 400px; /* Altura del mapa */
   width: 100%; /* Ancho del mapa */
 }
