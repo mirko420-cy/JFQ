@@ -977,110 +977,111 @@ button[type="submit"]:hover {
 /* nuevos codigos de media query*/
 
 
-/* Media Queries */
+/* Media Queries para dispositivos Android */
 @media screen and (max-width: 1000px) and (max-height: 2400px) {
   .ul1 {
-   /* width: 100%; */
-    height: auto;
-    
+      height: auto;
   }
-  .nav88 {
-    height: 50px;
-    width: 450px;
+
+  .nav88, .nav1 {
+      height: 50px;
+      width: 450px;
   }
-  .nav1 {
-    height: 50px;
-    width: 460px;
-  }
+
   .Inicio a,
   .dropdown a,
   .Contacto a {
-    font-size: 12px;
-    padding: 10px;
+      font-size: 12px;
+      padding: 10px;
   }
+
   .dropdown-content1,
   .dropdown-content2,
   .dropdown-content3,
   .dropdown-content4 {
-    max-width: 100%;
+      max-width: 100%;
   }
+
   .main-titlen1,
   .main-titlen01,
   .main-titlen02,
   .main-titlen03 {
-    font-size: 30px;
+      font-size: 30px;
   }
+
   .main-contentn {
-    padding-left: 20px;
-    padding-right: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
   }
+
   .main-image1 {
-    width: 90%;
-    margin: 10px auto;
+      width: 90%;
+      margin: 10px auto;
   }
+
   .text-2xl {
-    font-size: 1.25rem;
-   
+      font-size: 1.25rem;
   }
+
   .text-2xl.font-bold {
-    color: #dedfca;
-    font-style: italic;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
+      color: #dedfca;
+      font-style: italic;
+      margin-left: 10px;
+      margin-bottom: 10px;
+  }
+
   .footer-title {
-    font-size: 20px;
+      font-size: 20px;
   }
+
   .footer-description {
-    font-size: 14px;
+      font-size: 14px;
   }
+
   .footer-info {
-    font-size: 12px;
+      font-size: 12px;
   }
+
   .footer-icons {
-   
-    align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
+
   .icon {
-    width: 40px;
-    height: 40px;
+      width: 40px;
+      height: 40px;
   }
-  .title-naturaleza {
-    padding-left: 450px;
-}
-.river {
-  padding-left: 480px;
-}
-.text-lg {
-  padding-left: 450px;
-}
-.messi {
-  padding-left: 440px;
-}
-.p-4f {
-  padding-left: 0px;
-}
-.p-4fff {
-  padding-left: 0px;
-}
-.p-4ff {
-  padding-left: 0px;
-}
-.form-group{
-  padding-left: 450px;
-}
-.h2{
-  padding-right: 280px;
-}
-.form-control{
-  padding-left: 50px;
-}
-.btn{
-  position: relative;
-  left: 480px;
-}
+
   .icon-title {
-    font-size: 12px;
+      font-size: 12px;
+  }
+
+  .title-naturaleza,
+  .river,
+  .text-lg,
+  .messi,
+  .form-group {
+      padding-left: 450px;
+  }
+
+  .p-4f,
+  .p-4ff,
+  .p-4fff {
+      padding-left: 0;
+  }
+
+  .h2 {
+      padding-right: 280px;
+  }
+
+  .form-control {
+      padding-left: 50px;
+  }
+
+  .btn {
+      position: relative;
+      left: 480px;
   }
 }
 
