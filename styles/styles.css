@@ -28,6 +28,9 @@
     List-style:none;
 
   }
+  .mapas-de-google{
+    width: 1340;
+  }
   
   /*carrusel*/ 
  .carousel-container {
