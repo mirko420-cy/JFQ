@@ -1027,6 +1027,7 @@ button[type="submit"]:hover {
   }
 
   .text-2xl.font-bold {
+    display: none;
       color: #dedfca;
       font-style: italic;
       margin-left: 10px;
@@ -1089,6 +1090,7 @@ button[type="submit"]:hover {
   .mapas-de-google{
     width: 980px;
   }
+
 }
 
 #map  {
