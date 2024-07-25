@@ -1086,12 +1086,13 @@ button[type="submit"]:hover {
       position: relative;
       left: 480px;
   }
+  .mapas-de-google{
+    width: 980px;
+  }
 }
 
 #map  {
   height: 400px; /* Altura del mapa */
   width: 100%; /* Ancho del mapa */
 }
-.mapas-de-google{
-  width: 800px;
-}
+
