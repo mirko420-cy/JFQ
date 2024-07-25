@@ -29,7 +29,7 @@
 
   }
   .mapas-de-google{
-    width: 1340;
+    width: 1340px;
   }
   
   /*carrusel*/ 
@@ -1091,4 +1091,7 @@ button[type="submit"]:hover {
 #map  {
   height: 400px; /* Altura del mapa */
   width: 100%; /* Ancho del mapa */
+}
+.mapas-de-google{
+  width: 140px;
 }
