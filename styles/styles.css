@@ -684,6 +684,9 @@ position: relative;
 
 .icon-title {
   font-size: 14px; /* Tamaño del título del icono */
+  
+  margin-top: 50px;
+
 }
 .wrapper {
   width: 100%;
