@@ -1057,6 +1057,8 @@ button[type="submit"]:hover {
     width: 300px;
     padding-left: 10px;
 
+    margin-left: 10px;
+
   }
 
   .icon {
