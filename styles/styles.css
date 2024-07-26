@@ -1096,6 +1096,7 @@ button[type="submit"]:hover {
   }
   .mapas-de-google{
     width: 380px;
+    border:0;margin-left: 15px;
   }
 
 }
