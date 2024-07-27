@@ -979,6 +979,11 @@ button[type="submit"]:hover {
 {
     margin-bottom: 30px;
 }
+.nuevoh1 {
+  font-size: 0px;
+  color: #dedfca
+}
+
 
 /* nuevos codigos de media query*/
 
@@ -991,14 +996,14 @@ button[type="submit"]:hover {
 
   .nav88, .nav1 {
       height: 50px;
-      width: 450px;
+      width: 700px;
   }
 
   .Inicio a,
   .dropdown a,
   .Contacto a {
-      font-size: 12px;
-      padding: 10px;
+      font-size: 10px;
+      padding: 6px;
   }
 
   .dropdown-content1,
@@ -1084,7 +1089,10 @@ button[type="submit"]:hover {
   .text-lg,
   .messi,
   .form-group {
-      padding-left: 450px;
+      padding-left: 140px;
+  }
+  .messi {
+    padding-left: 100px;
   }
 
   .p-4f,
@@ -1107,10 +1115,20 @@ button[type="submit"]:hover {
   }
   .mapas-de-google{
     width: 380px;
-    border:0;margin-left: 8px;
+    border:0;margin-left: 7px;
   }
-  
 
+  .img3{
+    padding-left: 8px;
+    /*width: 200px;*/
+    height: 150px;
+  }
+  .nuevoh1{
+    color: #a08334;
+    font-style: italic;
+    font-size: 17px;
+    padding-left: 12px;
+  }
 
 }
 
