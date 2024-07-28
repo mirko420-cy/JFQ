@@ -1129,6 +1129,10 @@ button[type="submit"]:hover {
     font-size: 14px;
     padding-left: 50px;
   }
+  .text-xl {
+    font-size: 14px;
+    margin-top: 0px;
+}
 
 }
 
