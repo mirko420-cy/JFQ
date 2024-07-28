@@ -1144,6 +1144,9 @@ button[type="submit"]:hover {
 .dropdown-content1{
   background-color: #000000;
 }
+.text-lg {
+  padding-left: 120px;
+}
 
 }
 
