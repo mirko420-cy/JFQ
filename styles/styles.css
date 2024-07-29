@@ -1150,6 +1150,20 @@ button[type="submit"]:hover {
 .title-naturaleza{
   padding-left: 110px;
 }
+.dondecomer{
+  
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:100% 150% ;
+  padding: 0px;
+  height: 190px;
+}
+ .yo{
+  margin-top: 50px; /* Ajusta esta propiedad para mover la imagen hacia abajo */
+            margin-left: 100px; /* Ajusta esta propiedad para mover la imagen hacia la derecha */
+            width: 120px;
+            height: 120px;
+} 
 
 }
 
