@@ -983,7 +983,10 @@ button[type="submit"]:hover {
   font-size: 0px;
   color: #dedfca
 }
-
+.yo{
+  width:120px;
+   height: 120xp;
+}
 
 /* nuevos codigos de media query*/
 
@@ -1162,11 +1165,16 @@ button[type="submit"]:hover {
   font-size: 11px;
 }
  .yo{
-  margin-top: 50px; /* Ajusta esta propiedad para mover la imagen hacia abajo */
-            margin-left: 100px; /* Ajusta esta propiedad para mover la imagen hacia la derecha */
-            width: 120px;
-            height: 120px;
+  width: 80px;
+  
+  height: 100px;
 } 
+.comer{
+  text-align: center;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
 
 }
 
