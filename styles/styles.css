@@ -1158,6 +1158,9 @@ button[type="submit"]:hover {
   padding: 0px;
   height: 190px;
 }
+.transition-opacity{
+  font-size: 11px;
+}
  .yo{
   margin-top: 50px; /* Ajusta esta propiedad para mover la imagen hacia abajo */
             margin-left: 100px; /* Ajusta esta propiedad para mover la imagen hacia la derecha */
