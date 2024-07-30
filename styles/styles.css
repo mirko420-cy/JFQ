@@ -1117,7 +1117,7 @@ button[type="submit"]:hover {
       left: 480px;
   }
   .mapas-de-google{
-    width: 355px;
+    width: 380px;
     border:0;
     margin-left: 7px;
   }
@@ -1160,7 +1160,7 @@ button[type="submit"]:hover {
   background-repeat: no-repeat;
   background-size:100% 150% ;
   padding: 0px;
-  height: 190px;
+  height: 260px;
 }
 .transition-opacity{
   font-size: 11px;
