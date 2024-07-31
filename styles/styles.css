@@ -1059,19 +1059,19 @@ button[type="submit"]:hover {
       font-size: 20px;
       
     margin-left: 120px;
-
+    padding-left: 1px;
   }
 
   .footer-description {
       font-size: 14px;
-      
+      padding-left: 0px;
     margin-left: 100px;
 
   }
 
   .footer-info {
       font-size: 12px;
-      
+      padding-left: 0px;
     margin-left: 90px;
 
   }
@@ -1185,6 +1185,21 @@ button[type="submit"]:hover {
     margin-top: 100px;
     margin-bottom: 0px;
     font-size: 20px;
+}
+.dejaa{
+  padding-left: 100px;
+  margin-bottom: 8px;
+}
+.deja{
+  padding-left: 115px;
+}
+button[type="submit"] {
+  padding: 10px 25px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 }
