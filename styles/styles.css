@@ -654,14 +654,17 @@ position: relative;
 .footer-title {
   font-size: 24px; /* Tamaño del título */
   margin-bottom: 10px; /* Espacio inferior entre el título y la descripción */
+  padding-left: 590px;
 }
 
 .footer-description {
   font-style: italic; /* Estilo de letra cursiva para la descripción */
+  padding-left: 570px;
 }
 
 .footer-info {
   font-weight: bold; /* Texto en negrita para la información adicional */
+  padding-left: 545px;
 }
 
 .footer-icons {
@@ -896,7 +899,7 @@ position: relative;
 }
 
 button[type="submit"] {
-  padding: 10px 20px;
+  padding: 10px 32px;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -986,6 +989,13 @@ button[type="submit"]:hover {
 .yo{
   width:120px;
    height: 120xp;
+}
+.deja{
+  padding-left: 600px;
+}
+.dejaa{
+  padding-left: 590px;
+  margin-bottom: 8px;
 }
 
 /* nuevos codigos de media query*/
