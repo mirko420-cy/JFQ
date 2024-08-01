@@ -1201,6 +1201,16 @@ button[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
 }
+.main-descriptionn2 {
+  margin-left: 18px;
+  font-size: 13px;
+}
+.main-descriptionn3 {
+   margin-left: 90px; 
+}
+.main-titlen1 {
+  margin-left: 120px;
+ }
 
 }
 
