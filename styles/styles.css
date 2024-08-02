@@ -662,11 +662,13 @@ position: relative;
 }
 
 .footer-description {
+  text-align: center;
   font-style: italic; /* Estilo de letra cursiva para la descripción */
   padding-left: 570px;
 }
 
 .footer-info {
+  text-align: center;
   font-weight: bold; /* Texto en negrita para la información adicional */
   padding-left: 545px;
 }
@@ -686,7 +688,7 @@ position: relative;
 .icon {
   width: 50px; /* Ancho del icono */
   height: 50px; /* Altura del icono */
-  margin-bottom: 5px; /* Espacio inferior entre el icono y el título */
+  margin-bottom: -80px; /* Espacio inferior entre el icono y el título */
 }
 
 .icon-title {
@@ -695,6 +697,8 @@ position: relative;
   margin-top: 50px;
 
 }
+
+
 .wrapper {
   width: 100%;
   min-height: 100vh;
