@@ -306,7 +306,7 @@
   }
   .bg-gradient-to-r {
     
-      background-image: linear-gradient(to right, #2e6e3c, #c9cc18, #5a5421);
+      background-image:linear-gradient(transparent , hwb(0 80% 0%));
     }
   .img{
     background-image: url(./img/naturaleza1.jpg);
@@ -1205,16 +1205,6 @@ button[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
 }
-.main-descriptionn2 {
-  margin-left: 18px;
-  font-size: 13px;
-}
-.main-descriptionn3 {
-   margin-left: 90px; 
-}
-.main-titlen1 {
-  margin-left: 120px;
- }
 
 }
 
