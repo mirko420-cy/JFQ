@@ -8,20 +8,20 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="script/script.js">
 </head>
-<body class="body1">
-  <div class="opaco">
-  <div class="flex flex-col min-h-screen">
-    <header class="w-full h-20 flex items-center justify-between px-6 bg-white dark:bg-gray-800">
-      <img class="img3" src="images/municipalidad.jpg" alt="municipalidad">
-      <h1 class="text-2xl font-bold">Turismo y cultura en Juan Facundo Quiroga.</h1>
-      <nav class="nav1">
-        <ul class="ul1">
-          <li class="Inicio"><a href="index.html">Inicio</a></li>
-          <li class="dropdown">
-            <a href="#">Servicios</a>
-            <div class="dropdown-content1">
-              <a class="ponzio" href="pages/donde comer.html">-donde comer</a>
-              <a class="ponzio" href="pages/donde dormir.html">-donde dormir</a>
+      <body class="body1">
+      <div class="opaco">   
+        <div class="flex flex-col min-h-screen">
+          <header class="w-full h-20 flex items-center justify-between px-6 bg-white dark:bg-gray-800" style="opacity: .8;">
+            <img class="img3" src="images/municipalidad.jpg" alt="municipalidad">
+              <h1 class="text-2xl font-bold">Turismo y cultura en Juan Facundo Quiroga.</h1>
+                <nav class="nav1">
+                  <ul class="ul1">
+                    <li class="Inicio"><a href="index.html">Inicio</a></li>
+                      <li class="dropdown">
+                        <a href="#">Servicios</a>
+                          <div class="dropdown-content1">
+                            <a class="ponzio" href="pages/donde comer.html">-donde comer</a>
+                              <a class="ponzio" href="pages/donde dormir.html">-donde dormir</a>
             </div>
           </li>
           <li class="dropdown">
@@ -48,8 +48,8 @@
         </li>
         </ul>
       </nav>
-    </header>
-    <h1 class="nuevoh1">Turismo y cultura en Juan Facundo Quiroga.</h1>
+      </header>
+      <h1 class="nuevoh1">Turismo y cultura en Juan Facundo Quiroga.</h1>
     <div class="flex flex-1">
       <main class="p-6 w-full">
         <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -165,8 +165,13 @@
         </div>
       </div>
       </section>
-      <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-        <div class="group rounded-lg overflow-hidden">
+
+
+      <section style="margin: auto;">
+        <div id="contenedor-principal" class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+
+
+        <div  id="donde-comer" class="group rounded-lg overflow-hidden" style="background-color: hwb(0 80% 0%); opacity: .8;">
 
           <div class="icon-container">
             <div class="icon">
@@ -186,7 +191,7 @@
 
 
 
-        <div class="group rounded-lg overflow-hidden">
+        <div id="donde-dormir" class="group rounded-lg overflow-hidden" style="background-color: hwb(0 80% 0%); opacity: .8;">
 
           <div class="icon-container">
             <div class="icon">
@@ -204,14 +209,21 @@
             </p></div>
           </a>
         </div>
-      </section>
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      </div>
+
+      
+    </section>
+
+
+    <center> <h2 id="visitanos" style="background-color: hwb(0 80% 0%); opacity: .8;">visitanos todo el año</h2></center>
+
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" style="background-color: hwb(0 80% 0%); opacity: .8;">
         <div class="group rounded-lg overflow-hidden">
           <a href="pages/primavera.html"> <img src="images/primavera.jpg" alt="Primavera"
               class="w-full h-48 object-cover" width="200" height="200"
               style="aspect-ratio: 200 / 200; object-fit: cover;" /></a>
           <a href="pages/primavera.html">
-            <h2 class="text-xl font-bold p-4">Primavera</h2>
+          <center><h2 class="text-xl font-bold p-4">Primavera</h2></center>
           </a>
           <p class="p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
             Disfruta de la belleza de la primavera en Juan Facundo Quiroga.
@@ -221,7 +233,7 @@
           <a href="pages/verano.html"> <img src="images/verano.jpg" alt="Verano" class="w-full h-48 object-cover"
               width="200" height="200" style="aspect-ratio: 200 / 200; object-fit: cover;" /></a>
           <a href="pages/verano.html">
-            <h2 class="text-xl font-bold p-4">Verano</h2>
+            <center><h2 class="text-xl font-bold p-4">Verano</h2></center>
           </a>
           <p class="p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
             Experimenta el vibrante verano en Juan Facundo Quiroga.
@@ -231,7 +243,7 @@
           <a href="pages/otoño.html"> <img src="images/otoño.jpg" alt="Otoño" class="w-full h-48 object-cover"
               width="200" height="200" style="aspect-ratio: 200 / 200; object-fit: cover;" /></a>
           <a href="pages/otoño.html">
-            <h2 class="text-xl font-bold p-4">Otoño</h2>
+          <center><h2 class="text-xl font-bold p-4">Otoño</h2></center>
           </a>
           <p class="p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
             Observa los colores cambiantes del otoño en Juan Facundo Quiroga.
@@ -242,7 +254,7 @@
               class="w-full h-48 object-cover" width="200" height="200"
               style="aspect-ratio: 200 / 200; object-fit: cover;" /></a>
           <a href="pages/invierno.html">
-            <h2 class="text-xl font-bold p-4">Invierno</h2>
+          <center><h2 class="text-xl font-bold p-4">Invierno</h2></center>
           </a>
           <p class="p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
             Siente la tranquilidad del invierno en Juan Facundo Quiroga.
@@ -251,7 +263,11 @@
       </section>
       </main>
     </div>
-    <div class="conteiner-ubi">
+
+
+
+
+    <div class="conteiner-ubi" style="background-color: hwb(0 80% 0%); opacity: .8; border: 60%;" >
     <center>
     <h1 class="Ubicación">Ubicación</h1>
     <p>
@@ -259,17 +275,11 @@
     </p>
     </center>
     <iframe class="mapas-de-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13707.4479645041!2d-66.61926160381412!3d-30.806504312615868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94297f586f120f59%3A0x80202b10383a8e39!2sMalanz%C3%A1n%2C%20La%20Rioja%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1721074504426!5m2!1ses-419!2sus" width="1348" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div id="comment-section">
+    <div id="comment-section " style="background-color: hwb(0 80% 0%); opacity: .8; border: 60%;">
       <!-- Aquí se mostrarán los comentarios -->
   </div>
 
-<<<<<<< Updated upstream
-  <h2 class="dejaa">Deja un comentario</h2>
-  <form class="deja" id="comment-form">
-=======
-  </center><h2>Deja un comentario</h2>
-  <form id="comment-form">
->>>>>>> Stashed changes
+<center>
       <label for="name">Nombre:</label><br>
       <input type="text" id="name" name="name" required><br><br>
       
@@ -282,6 +292,8 @@
     <!-- Aquí se mostrarán los comentarios -->
 </div>
 </center>
+
+
   <footer class="footer-container">
     <h2 class="footer-title">Conoce más!</h2>
     <p class="footer-description">De Juan Facundo Quiroga</p>

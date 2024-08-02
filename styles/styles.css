@@ -18,7 +18,7 @@
   .opaco{
     height: 100%;
     width: 100%;
-    background: linear-gradient(#ffcccc , transparent);
+    background: linear-gradient(transparent , hwb(0 80% 0%));
   }
 
   .ul1{
@@ -340,6 +340,10 @@
     padding-left: 20px;
     width: 200px;
     height: 150px;
+  }
+
+  #contenerdor-de-donde {
+    background: #0011f8;
   }
 
 .icon-container
@@ -1209,3 +1213,14 @@ button[type="submit"] {
   width: 100%; /* Ancho del mapa */
 }
 
+#visitanos{
+  margin: 0%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+#ranu{
+  left: auto;
+}
