@@ -358,6 +358,7 @@ position: relative;
   top: 20%;
   left: 45%;
   transform: translate(-50%, -50%);
+  color: hwb(0 16% 81%);
 }
 
 
@@ -368,13 +369,14 @@ position: relative;
   background-size:100% 150% ;
   padding: 50px;
   height: 100px;
-
+  color: #000000;
  }
  .comer{
   text-align: center;
   margin-top: 50px;
   margin-bottom: 0px;
   font-size: 1.25rem;
+  text-shadow: hwb(0 19% 75%);
  }
  .p-22{
   
@@ -1228,3 +1230,4 @@ button[type="submit"] {
 #ranu{
   left: auto;
 }
+
