@@ -1069,20 +1069,20 @@ button[type="submit"]:hover {
       font-size: 20px;
       
     margin-left: 120px;
-    padding-left: 1px;
+    padding-left: 20px;
   }
 
   .footer-description {
       font-size: 14px;
       padding-left: 0px;
-    margin-left: 100px;
+    margin-left: 1px;
 
   }
 
   .footer-info {
       font-size: 12px;
       padding-left: 0px;
-    margin-left: 90px;
+    margin-left: 0px;
 
   }
 
