@@ -681,6 +681,12 @@ position: relative;
  /* max-width: 300px; /* Ancho máximo para la distribución de los iconos */
   margin-top: 20px; /* Espacio superior entre los iconos y el contenido superior */
 }
+.footer-iconss {
+  display: flex; /* Mostrar los iconos en línea */
+  justify-content: space-between; /* Distribuir los iconos uniformemente */
+ /* max-width: 300px; /* Ancho máximo para la distribución de los iconos */
+  margin-top: 20px; /* Espacio superior entre los iconos y el contenido superior */
+}
 
 .icon-container {
   text-align: center; /* Centrar el contenido del contenedor de iconos */
@@ -1051,7 +1057,7 @@ button[type="submit"]:hover {
     margin-left: 10px;
     font-size: 13px;
   }
-  
+
   .main-descriptionn33{
     margin-left: 80px;
   }
@@ -1111,6 +1117,18 @@ button[type="submit"]:hover {
     margin-left: 10px;
 
   }
+  
+  .footer-iconss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  width: 250px;
+  padding-left: 10px;
+
+  margin-left: 10px;
+
+}
 
   .icon {
       width: 40px;
