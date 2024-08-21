@@ -660,9 +660,9 @@ position: relative;
     margin-top: 3rem;
 }
 .footer-container {
+  height: 350px;
   background-color: #333; /* Color de fondo del footer */
   color: #fff; /* Color del texto del footer */
-  padding: 20px; /* Espaciado interno del footer */
 }
 
 .footer-title {
@@ -682,10 +682,12 @@ position: relative;
 }
 
 .footer-icons {
+  height: 200px;
   display: flex;
   justify-content: space-between,center; /* Distribuir los iconos uniformemente */
 }
 .footer-iconss {
+  height: 100px;
   display: flex; /* Mostrar los iconos en línea */
   justify-content: space-between; /* Distribuir los iconos uniformemente */
  /* max-width: 300px; /* Ancho máximo para la distribución de los iconos */
@@ -1057,16 +1059,15 @@ button[type="submit"]:hover {
   }
 
   .main-titlen11{
-    margin-left: 120px;
+    text-align: center;
   }
 
   .main-descriptionn22{
-    margin-left: 10px;
-    font-size: 13px;
+    text-align: center;
   }
 
   .main-descriptionn33{
-    margin-left: 80px;
+    text-align: center;
   }
 
 
