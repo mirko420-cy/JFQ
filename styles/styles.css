@@ -84,9 +84,11 @@
 
   /*carrusel1*/
   .carousel-container {
+  
+    background-color: hwb(0 69% 17% / 0.326); 
   position: relative;
   
-  margin: 0 auto;
+  margin:  10 auto;
   overflow: hidden;
 }
 
@@ -119,9 +121,10 @@
 
    /*carrusel2*/ 
    .carousel-container {
+    background-color: hwb(0 69% 17% / 0.326);
   position: relative;
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 20 auto;
   overflow: hidden;
   
   /*height: 200px;*/
