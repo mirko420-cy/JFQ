@@ -36,6 +36,7 @@
     Height:250px;
     Display:flex;
     List-style:none;
+    padding-left: 0rem;
 
   }
   .mapas-de-google{
@@ -870,7 +871,7 @@ position: relative;
 }
 .title-naturaleza{
   
-  padding-left: 600px;
+  padding-left: 580px;
 
 }
 
@@ -881,11 +882,11 @@ position: relative;
   padding-left: 480px;
 }
 .text-lg{
-  padding-left: 600px;
+  padding-left: 565px;
 }
 .river{
   color: black;
-  padding-left: 620px;
+  padding-left: 600px;
   font-size: 30px;
   text-decoration: none;
 }
