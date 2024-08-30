@@ -280,6 +280,49 @@
       <p></p>
       <!-- Aquí se mostrarán los comentarios -->
 
+
+
+      
+      <script>
+        document.getElementById('comentarioForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            fetch('/comentarios', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ nombre, mensaje })
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data);
+                cargarComentarios();
+            });
+        });
+
+        function cargarComentarios() {
+            fetch('/comentarios')
+            .then(response => response.json())
+            .then(data => {
+                const listaComentarios = document.getElementById('listaComentarios');
+                listaComentarios.innerHTML = '';
+                data.forEach(comentario => {
+                    const li = document.createElement('li');
+                    li.textContent = `${comentario.nombre}: ${comentario.mensaje} (Publicado el ${new Date(comentario.fecha).toLocaleString()})`;
+                    listaComentarios.appendChild(li);
+                });
+            });
+        }
+
+        cargarComentarios();
+    </script>
+
+
+
+
   </div>
 <h2 class="formulario" style="text-align: center;font-family: sans-serif; text-shadow: 0 0 12px hwb(0 17% 78%)">Caja de comentario</h2>
 <form action="" style= "background-color: #ededed91">
