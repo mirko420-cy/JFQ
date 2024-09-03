@@ -8,6 +8,9 @@
   .h44{
     font-size: 15px;
   }
+  .smaller-title {
+    font-size: 2rem; /* Ajusta este valor a uno más pequeño */
+}
   .dropup,
 .dropend,
 .dropdown,
@@ -185,6 +188,24 @@
     color:#dedfca;
     font-style: italic;
     margin-left: 150px;
+    margin-bottom: 40px
+  }
+  .piel {
+    color:#dedfca;
+    font-style: italic;
+    margin-left: 10px;
+    margin-bottom: 40px
+  }
+  .calor {
+    color:#dedfca;
+    font-style: italic;
+    
+    margin-bottom: 40px
+  }
+  .estancia {
+    color:#dedfca;
+    font-style: italic;
+    
     margin-bottom: 40px
   }
   .text-2xl3.font-bold4 {
