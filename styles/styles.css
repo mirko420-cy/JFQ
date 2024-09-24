@@ -1092,6 +1092,7 @@ button[type="submit"]:hover {
   .nav88, .nav1 {
       height: 50px;
       width: 700px;
+      padding-left: 18px;
   }
 
   .Inicio a,
@@ -1099,6 +1100,11 @@ button[type="submit"]:hover {
   .Contacto a {
       font-size: 8px;
       padding: 5px;
+  }
+  .Inicio{
+    
+    padding-top: 4px;
+
   }
 
   .dropdown-content1,
