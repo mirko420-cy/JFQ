@@ -1,6 +1,7 @@
 
 
-  .dropdown {
+  .dropdown ,
+  .complicado {
     display: inline-block;
     padding: 5px;
     
@@ -14,6 +15,7 @@
   .dropup,
 .dropend,
 .dropdown,
+.complicado,
 .dropstart,
 .dropup-center,
 .dropdown-center {
@@ -21,6 +23,13 @@
 }
 .fe{
   margin-left: 200px;
+}
+.sponsor{
+  background-color: hwb(0 80% 0%);
+  padding-left: 0px;padding-bottom: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  
 }
 .fed1{
   padding-left: 200px;
@@ -211,7 +220,7 @@
   }
   .nav1{
     height: 70px;
-    width: 400px;
+    width: 420px;
   }
   .nav88{
     height: 70px;
@@ -234,6 +243,23 @@
   background-color: rgb(255, 204, 204);
   border-radius: 5px;
  }  
+ .complicado a{
+  font-size: 15px;
+        padding: 5px;
+      
+ }  
+ .complicado{
+  margin-top: 0px;
+ }
+ .complicado a {
+  text-decoration: none;
+  font-weight: bold;
+  
+  padding: 5px;
+  background-color: rgb(255, 204, 204);
+  border-radius: 5px;
+}
+ 
  .ponzio {
   
   color:#000000;
@@ -262,6 +288,10 @@
   }
   
   .dropdown:hover .dropdown-content1 {
+    display: block;
+
+  }
+  .complicado:hover .dropdown-content1 {
     display: block;
 
   }
@@ -942,7 +972,7 @@ position: relative;
 }
 .river{
   color: black;
-  padding-left: 100px;
+  padding-left: 110px;
   font-size: 30px;
   text-decoration: none;
 }
@@ -951,6 +981,11 @@ position: relative;
 }
 .p-4fff {
   padding-left: 440px;
+}
+.de{
+  background-color: hwb(0 80% 0% / 0.209);
+  text-shadow: 0 0 12px hwb(0 17% 78%);
+  width: 800px;
 }
 
 .comment-box {
@@ -1103,7 +1138,7 @@ button[type="submit"]:hover {
   }
   .Inicio{
     
-    padding-top: 4px;
+    padding-top: 5px;
 
   }
 
@@ -1183,7 +1218,7 @@ button[type="submit"]:hover {
       align-items: center;
       
     width: 300px;
-    padding-left: 30px;
+    padding-left: 33px;
 
     margin-left: 10px;
 
@@ -1234,10 +1269,15 @@ button[type="submit"]:hover {
   .form-control {
       padding-left: 50px;
   }
-
+  .complicado{
+    margin-top: 13px;
+   }
+   .complicado a{
+    font-size: 8px;
+   }
   .btn {
       position: relative;
-      left: 480px;
+      left: 0px;
   }
   .mapas-de-google{
     width: 380px;
@@ -1270,12 +1310,21 @@ button[type="submit"]:hover {
 .dropdown-content1{
   background-color: #000000;
 }
+.complicado-content1{
+  background-color: #000000;
+}
 .text-lg {
   padding-left: 70px;
 }
 .title-naturaleza{
   font-size: 30px;
   padding-left: 100px;
+}
+
+.fifa{
+  display: inline-block;
+  padding: 5px;
+  padding-top: 14px; 
 }
 .dondecomer{
   
@@ -1293,6 +1342,10 @@ button[type="submit"]:hover {
   
   height: 100px;
 } 
+.ranu{
+  width: 100px;
+  height: 100px;
+}
 .comer{
   text-align: center;
     margin-top: 100px;
@@ -1314,7 +1367,18 @@ button[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
 }
-
+.de{
+  background-color: hwb(0 80% 0% / 0.209);
+  text-shadow: 0 0 12px hwb(0 17% 78%);
+  width: 300px;
+}
+.sponsor{
+  background-color: hwb(0 80% 0%);
+  padding-left: 0px;padding-bottom: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+ 
+}
 }
 
 #map  {
@@ -1330,9 +1394,8 @@ button[type="submit"] {
   font-family: sans-serif;
 }
 
-#ranu{
-  left: auto;
-}
+
+
 
 
 
