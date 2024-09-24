@@ -942,7 +942,7 @@ position: relative;
 }
 .river{
   color: black;
-  padding-left: 600px;
+  padding-left: 100px;
   font-size: 30px;
   text-decoration: none;
 }
@@ -1159,8 +1159,8 @@ button[type="submit"]:hover {
   .footer-title {
       font-size: 20px;
       
-    margin-left: 110px;
-    padding-left: 3px;
+    margin-left: 0px;
+    padding-left: 0px;
   }
 
   .footer-description {
@@ -1210,8 +1210,8 @@ button[type="submit"]:hover {
       font-size: 12px;
   }
 
-  .title-naturaleza,
-  .river,
+  
+  
   .text-lg,
   .messi,
   .form-group {
@@ -1271,10 +1271,10 @@ button[type="submit"]:hover {
   background-color: #000000;
 }
 .text-lg {
-  padding-left: 120px;
+  padding-left: 70px;
 }
 .title-naturaleza{
-  font-size: 30px;
+  font-size: 90px;
 }
 .dondecomer{
   
