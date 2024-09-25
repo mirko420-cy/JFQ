@@ -31,6 +31,10 @@
   padding-right: 0px;
   
 }
+.san1{
+  width : 1100px;
+  height: 410px;
+}
 .fed1{
   padding-left: 200px;
 }
@@ -295,6 +299,22 @@
     display: block;
 
   }
+  .dropdown:hover .dropdown-content2 {
+    display: block;
+
+  }
+  .complicado:hover .dropdown-content2 {
+    display: block;
+
+  }
+  .dropdown:hover .dropdown-content3 {
+    display: block;
+
+  }
+  .complicado:hover .dropdown-content3 {
+    display: block;
+
+  }
   .dropdown-content2 {
     max-width: 360px;
     float: right;
@@ -381,6 +401,14 @@
     margin-right: 0px;
 
   }
+  .t422{
+    width: 912px;
+    height: 410px;
+    
+    margin-left: 100px;
+
+  }
+  
   .col-md-14{
     position: relative;
     margin-top: 0px;
@@ -769,6 +797,26 @@ position: relative;
 }
 
 .footer-icons {
+  height: 200px;
+  display: flex;
+  justify-content: space-between,center; /* Distribuir los iconos uniformemente */
+}
+.footer-icons22 {
+  height: 200px;
+  display: flex;
+  justify-content: space-between,center; /* Distribuir los iconos uniformemente */
+}
+.footer-icons23 {
+  height: 200px;
+  display: flex;
+  justify-content: space-between,center; /* Distribuir los iconos uniformemente */
+}
+.footer-icons24 {
+  height: 200px;
+  display: flex;
+  justify-content: space-between,center; /* Distribuir los iconos uniformemente */
+}
+.footer-icons25 {
   height: 200px;
   display: flex;
   justify-content: space-between,center; /* Distribuir los iconos uniformemente */
@@ -1190,6 +1238,9 @@ button[type="submit"]:hover {
       margin-left: 10px;
       margin-bottom: 10px;
   }
+  .row{
+    margin-bottom: 1.5rem;
+}
 
   .footer-title {
       font-size: 20px;
@@ -1223,6 +1274,51 @@ button[type="submit"]:hover {
     margin-left: 10px;
 
   }
+  .footer-icons22 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  width: 300px;
+  padding-left: 33px;
+
+  margin-left: 25px;
+
+}
+.footer-icons23 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+width: 300px;
+padding-left: 33px;
+
+margin-left: 25px;
+
+}
+.footer-icons24 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+width: 300px;
+padding-left: 33px;
+
+margin-left: 25px;
+
+}
+.footer-icons25 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+width: 300px;
+padding-left: 33px;
+
+margin-left: 25px;
+
+}
+
   
   .footer-iconss {
     display: flex;
@@ -1235,7 +1331,16 @@ button[type="submit"]:hover {
   margin-left: 10px;
 
 }
+.t422{
+  width: 308px;
+  height: 410px;
+  
+  margin-left: 0px;
 
+}
+.fed1 {
+  padding-left: 0px;
+}
   .icon {
       width: 40px;
       height: 40px;
@@ -1255,6 +1360,13 @@ button[type="submit"]:hover {
   .messi {
     padding-left: 100px;
   }
+  .san1{
+    width : 320px;
+    height: 410px;
+  }
+  .fe {
+    margin-left: 0px;
+}
 
   .p-4f,
   .p-4ff,
@@ -1270,11 +1382,16 @@ button[type="submit"]:hover {
       padding-left: 50px;
   }
   .complicado{
-    margin-top: 13px;
+    margin-top: 10px;
    }
    .complicado a{
     font-size: 8px;
    }
+   .col-6{
+    
+    padding-left: 18px;
+   }
+
   .btn {
       position: relative;
       left: 0px;
