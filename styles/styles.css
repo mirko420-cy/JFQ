@@ -9,6 +9,10 @@
   .h44{
     font-size: 15px;
   }
+  .flora{
+    width:400px;
+     height:300px;
+  }
   .smaller-title {
     font-size: 2rem; /* Ajusta este valor a uno más pequeño */
 }
@@ -290,6 +294,9 @@
     box-shadow: 0 8px 16px hwb(0 17% 78%);
     padding: 5px;
   }
+  .sal{
+    width: 452px;
+  }
   
   .dropdown:hover .dropdown-content1 {
     display: block;
@@ -417,6 +424,7 @@
   .card-title{
     margin-top: 35px;
   }
+  
   .w-full {
     width: 100%;
    
@@ -821,6 +829,16 @@ position: relative;
   display: flex;
   justify-content: space-between,center; /* Distribuir los iconos uniformemente */
 }
+.footer-icons26 {
+  height: 200px;
+  display: flex;
+  justify-content: space-between,center; /* Distribuir los iconos uniformemente */
+}
+.footer-icons27 {
+  height: 200px;
+  display: flex;
+  justify-content: space-between,center; /* Distribuir los iconos uniformemente */
+}
 .footer-iconss {
   height: 100px;
   display: flex; /* Mostrar los iconos en línea */
@@ -1093,7 +1111,9 @@ button[type="submit"]:hover {
   
   height: 550px;
 }
-
+.taaller{
+  height: 225px;
+}
 
 /*local */
 .gallery-title
@@ -1203,7 +1223,18 @@ button[type="submit"]:hover {
   .main-titlen03 {
       font-size: 30px;
   }
-
+  .sal{
+    margin-bottom: 0px;
+    
+    height: 380px;
+    width: 300px
+  }
+  .taaller{
+    height: 225px;
+  }
+.frio{
+  width: 340px;
+}
   .main-titlen11{
     text-align: center;
   }
@@ -1241,7 +1272,12 @@ button[type="submit"]:hover {
   .row{
     margin-bottom: 1.5rem;
 }
-
+.boo{
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+}
   .footer-title {
       font-size: 20px;
       
@@ -1318,6 +1354,28 @@ padding-left: 33px;
 margin-left: 25px;
 
 }
+.footer-icons26 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+width: 300px;
+padding-left: 33px;
+
+margin-left: 25px;
+
+}
+.footer-icons27 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+width: 300px;
+padding-left: 40px;
+
+margin-left: 25px;
+
+}
 
   
   .footer-iconss {
@@ -1325,8 +1383,8 @@ margin-left: 25px;
     justify-content: center;
     align-items: center;
     
-  width: 250px;
-  padding-left: 10px;
+  width: 220px;
+  padding-left: 80px;
 
   margin-left: 10px;
 
@@ -1335,11 +1393,12 @@ margin-left: 25px;
   width: 308px;
   height: 410px;
   
-  margin-left: 0px;
+  margin-left: 21px;
 
 }
 .fed1 {
   padding-left: 0px;
+  font-size: 22px;
 }
   .icon {
       width: 40px;
@@ -1361,11 +1420,12 @@ margin-left: 25px;
     padding-left: 100px;
   }
   .san1{
-    width : 320px;
+    width : 352px;
     height: 410px;
   }
   .fe {
     margin-left: 0px;
+    font-size: 18px;
 }
 
   .p-4f,
@@ -1391,7 +1451,9 @@ margin-left: 25px;
     
     padding-left: 18px;
    }
-
+   .card-title00{
+    margin-top: 0px;
+  }
   .btn {
       position: relative;
       left: 0px;
@@ -1483,6 +1545,9 @@ button[type="submit"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+.flora{
+  width: 300px;
 }
 .de{
   background-color: hwb(0 80% 0% / 0.209);
