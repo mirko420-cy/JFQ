@@ -839,6 +839,11 @@ position: relative;
   display: flex;
   justify-content: space-between,center; /* Distribuir los iconos uniformemente */
 }
+.footer-icons28 {
+  height: 200px;
+  display: flex;
+  justify-content: space-between,center; /* Distribuir los iconos uniformemente */
+}
 .footer-iconss {
   height: 100px;
   display: flex; /* Mostrar los iconos en línea */
@@ -1182,7 +1187,9 @@ button[type="submit"]:hover {
   padding-left: 590px;
   margin-bottom: 8px;
 }
-
+.auto{
+  width: 400px; height: 400px;
+}
 /* nuevos codigos de media query*/
 
 
@@ -1376,6 +1383,17 @@ padding-left: 40px;
 margin-left: 25px;
 
 }
+.footer-icons28 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+width: 300px;
+padding-left: 33px;
+
+margin-left: 25px;
+
+}
 
   
   .footer-iconss {
@@ -1548,6 +1566,9 @@ button[type="submit"] {
 }
 .flora{
   width: 300px;
+}
+.auto{
+  width: 250px; height: 250px;
 }
 .de{
   background-color: hwb(0 80% 0% / 0.209);
