@@ -1573,6 +1573,10 @@ button[type="submit"] {
 .flora{
   width: 300px;
 }
+.image-title{
+  padding-right: 960px;
+  margin-left: 0px;
+}
 .auto{
   width: 350px; height: 250px;
 }
