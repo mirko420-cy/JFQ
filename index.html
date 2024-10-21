@@ -281,40 +281,54 @@
       <!-- Aquí se mostrarán los comentarios -->
 
   </div>
-<h2 class="formulario" style="text-align: center;font-family: sans-serif; text-shadow: 0 0 12px hwb(0 17% 78%)">Deja tu comentario...</h2>
-<form action="" style= "background-color: #ededed91" id="comentarioForm">
-  <div class="form_imput" style="padding: 10px 20px;">
-    <input type="text" placeholder="Nombre Completo" style="width: 100%;box-sizing: border-box; padding: 6px 12px; border-left: 1px solid hwb(0 62% 18%);" id="nombre">
-  </div>
-  <div class="form_imput" style="padding: 10px 20px;">
-    <input type="email" placeholder="Correo" style="width: 100%;box-sizing: border-box; padding: 6px 12px; border-left: 3px solid hwb(0 49% 36%);">
-  </div>
-  <div class="form_imput" style="padding: 10px 20px;">
-    <input type="text" placeholder="su mensaje" style="width: 100%;box-sizing: border-box; padding: 20px 12px; border-left: 3px solid hwb(0 49% 36%);" id="mensaje">
-  </div>
-  <center><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 col-span-full sm:col-span-2 lg:col-span-3" type="submit" >Enviar Comentario</button></center>
-</form>
+  <h2 class="formulario" style="text-align: center; font-family: sans-serif; text-shadow: 0 0 12px hwb(0 17% 78%)">Deja tu comentario...</h2>
+  <form id="comentarioForm" style="background-color: #ededed91">
+    <div class="form_imput" style="padding: 10px 20px;">
+      <input type="text" placeholder="Nombre Completo" style="width: 100%; box-sizing: border-box; padding: 6px 12px; border-left: 1px solid hwb(0 62% 18%);" id="nombre">
+    </div>
+    <div class="form_imput" style="padding: 10px 20px;">
+      <input type="email" placeholder="Correo" style="width: 100%; box-sizing: border-box; padding: 6px 12px; border-left: 3px solid hwb(0 49% 36%);" id="correo">
+    </div>
+    <div class="form_imput" style="padding: 10px 20px;">
+      <input type="text" placeholder="Su mensaje" style="width: 100%; box-sizing: border-box; padding: 20px 12px; border-left: 3px solid hwb(0 49% 36%);" id="mensaje">
+    </div>
+    <center>
+      <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 col-span-full sm:col-span-2 lg:col-span-3" type="submit">Enviar Comentario</button>
+    </center>
+  </form>
+  
 
 
 <script>
-  document.getElementById('comentarioForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const nombre = document.getElementById('nombre').value;
-      const mensaje = document.getElementById('mensaje').value;
+document.getElementById('comentarioForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById('nombre').value;
+    const correo = document.getElementById('correo').value; // Agregado
+    const mensaje = document.getElementById('mensaje').value;
 
-      fetch('/comentarios', {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ nombre, mensaje })
-      })
-      .then(response => response.text())
-      .then(data => {
-          alert(data);
-          cargarComentarios();
-      });
-  });
+    fetch('/comentarios', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ nombre, correo, mensaje }) // Agregado
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Error en la red: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        alert(data);
+        cargarComentarios();
+    })
+    .catch(error => {
+        console.error('Hubo un problema con la solicitud:', error);
+        alert('Error al enviar el comentario. Inténtalo de nuevo más tarde.');
+    });
+});
+
 
   function cargarComentarios() {
       fetch('/comentarios')
