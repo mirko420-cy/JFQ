@@ -92,7 +92,41 @@ submitButton.addEventListener("click", function() {
   commentInput.value = "";
 });
 
+function initMap() {
+  // Coordenadas del lugar
+  var lugar = { lat: 12.992571201622615, lng: -66.60197115964398 };
 
+  // mapa
+  var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15, //zoom inicial del mapa
+      center: lugar // Centrar
+  });
+
+  // Marcador en las coordenadas del lugar
+  var marker = new google.maps.Marker({
+      position: lugar,
+      map: map,
+      title: 'Ubicación del Lugar'
+  });
+}
+
+
+// Manejo de eventos y lógica de comentarios
+
+document.getElementById('comentarioForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  var name = document.getElementById('nombre').value;
+  var comment = document.getElementById('mensaje').value;
+  addComment(name, comment);
+  document.getElementById('comment-form').reset();
+});
+
+function addComment(name, comment) {
+  var commentSection = document.getElementById('comment-section');
+  var newComment = document.createElement('div');
+  newComment.innerHTML = '<strong>' + name + '</strong>: ' + comment + '<hr>';
+  commentSection.appendChild(newComment);
+}
 
 
 
