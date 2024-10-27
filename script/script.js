@@ -113,10 +113,10 @@ function initMap() {
 
 // Manejo de eventos y lógica de comentarios
 
-document.getElementById('comment-form').addEventListener('submit', function(event) {
+document.getElementById('comentarioForm').addEventListener('submit', function(event) {
   event.preventDefault();
-  var name = document.getElementById('name').value;
-  var comment = document.getElementById('comment').value;
+  var name = document.getElementById('nombre').value;
+  var comment = document.getElementById('mensaje').value;
   addComment(name, comment);
   document.getElementById('comment-form').reset();
 });
