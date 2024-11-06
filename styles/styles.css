@@ -482,7 +482,7 @@ position: relative;
   position: absolute;
   top: 20%;
   left: 45%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -160%);
   color: hwb(0 16% 81%);
 }
 
@@ -777,7 +777,7 @@ position: relative;
     margin-top: 3rem;
 }
 .footer-container {
-  height: 350px;
+  height: 380px;
   background-color: #333; /* Color de fondo del footer */
   color: #fff; /* Color del texto del footer */
 }
@@ -803,9 +803,14 @@ position: relative;
   text-align: center;
   font-weight: bold; /* Texto en negrita para la información adicional */
 }
+.footer-infoo {
+  text-align: center;
+  font-weight: bold; /* Texto en negrita para la información adicional */
+  
+}
 
 .footer-icons {
-  height: 200px;
+  height: 150px;
   display: flex;
   justify-content: space-between,center; /* Distribuir los iconos uniformemente */
 }
@@ -866,7 +871,7 @@ position: relative;
 .icon-title {
   font-size: 14px; /* Tamaño del título del icono */
   
-  margin-top: 50px;
+  margin-top: 0px;
 
 }
 
@@ -1305,6 +1310,12 @@ button[type="submit"]:hover {
     margin-left: 0px;
 
   }
+  .footer-infoo {
+    font-size: 12px;
+    padding-left: 0px;
+  margin-left: 0px;
+
+}
 
   .footer-icons {
       display: flex;
