@@ -1044,7 +1044,7 @@ position: relative;
   padding-left: 480px;
 }
 .text-lg{
-  padding-left: 565px;
+  padding-left: 585px;
 }
 .river{
   color: black;
@@ -1123,6 +1123,11 @@ button[type="submit"]:hover {
 }
 .taaller{
   height: 225px;
+}
+.anonima{
+  padding-top: 0px;
+  margin-top: 35px;
+  margin-bottom: 0px;
 }
 
 /*local */
@@ -1316,6 +1321,11 @@ button[type="submit"]:hover {
   margin-left: 0px;
 
 }
+.anonima{
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
   .footer-icons {
       display: flex;
@@ -1326,6 +1336,7 @@ button[type="submit"]:hover {
     padding-left: 33px;
 
     margin-left: 10px;
+    height: 140px;
 
   }
   .footer-icons22 {
@@ -1371,6 +1382,11 @@ padding-left: 33px;
 
 margin-left: 25px;
 
+}
+.footer-container {
+  height: 320px;
+  background-color: #333; /* Color de fondo del footer */
+  color: #fff; /* Color del texto del footer */
 }
 .river{
   color: black;
@@ -1528,7 +1544,7 @@ margin-left: 25px;
   background-color: #000000;
 }
 .text-lg {
-  padding-left: 70px;
+  padding-left: 100px;
 }
 .title-naturaleza{
   font-size: 30px;
@@ -1629,7 +1645,7 @@ button[type="submit"] {
 
 
 
-formulario {
+.formulario {
   text-align: center;
   margin: 0;
   margin-bottom: 10px;
@@ -1638,6 +1654,61 @@ formulario {
   font-size: 22px;
   padding: 10px;
 }
+.formulariomapa {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  font-weight: 100px;
+  font-size: 12px;
+  padding: 5px;
+
+}
+.service-card {
+  border: 1px solid #09ff00;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.service-card1 {
+  border: 1px solid #ff8404;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.service-card2 {
+  border: 1px solid #1100fa;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  color:  #09ff00;
+}
+.service-card1 h3 {
+  color: #ff8404;
+}.service-card2 h3 {
+  color: #1100fa;
+}
+.service-card,
+.service-card1,
+.service-card2
+ p {
+  margin: 5px 0;
+  color: #555;
+}
+.emergencia{
+  background-color: #487a8d;
+  text-align: center;
+   font-family: sans-serif;
+}
 
 form{
   background-color: transparent;
@@ -1645,7 +1716,7 @@ form{
   max-width: 500px;
   margin: auto;
   box-shadow: 0px 0px 55px #fff2;
-  margin-top: 50px;
+  margin-top: 10px;
   border-radius: 8px;
 }
 
