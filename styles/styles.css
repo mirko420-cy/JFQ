@@ -668,6 +668,9 @@ position: relative;
   .group {
     position: relative;
   }
+  .group1 {
+    position: relative;
+  }
   
   .dark\:bg-gray-800 {
     background-color: #000000;
@@ -1471,6 +1474,14 @@ margin-left: 25px;
   .form-group {
       padding-left: 140px;
   }
+  .group {
+    position: relative;
+    height: 350px;
+  }
+  .group1 {
+    position: relative;
+    height: 470px;
+  }
   .messi {
     padding-left: 100px;
   }
@@ -1488,7 +1499,17 @@ margin-left: 25px;
   .p-4fff {
       padding-left: 0;
   }
-
+  .dondecomer{
+    background-image: url(../img/comida.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:100% 150% ;
+    padding: 50px;
+    height: 100px;
+    color: #000000;
+    padding-left: 60px;
+    width: 100px;
+   }
   .h2 {
       padding-right: 280px;
   }
@@ -1533,6 +1554,14 @@ margin-left: 25px;
     font-size: 12px;
     margin-top: 0px;
 }
+.comer{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  font-size: 1.25rem;
+  text-shadow: hwb(0 19% 75%);
+  width: 80px;
+ }
 .dropdown-content2{
   height: 50px;
   background-color: #000000;
@@ -1578,12 +1607,7 @@ margin-left: 25px;
   width: 100px;
   height: 100px;
 }
-.comer{
-  text-align: center;
-    margin-top: 100px;
-    margin-bottom: 0px;
-    font-size: 20px;
-}
+
 .dejaa{
   padding-left: 98px;
   margin-bottom: 8px;
