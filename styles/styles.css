@@ -495,7 +495,9 @@ position: relative;
   padding: 50px;
   height: 100px;
   color: #000000;
+  padding-left: 110px;
  }
+ 
  .comer{
   text-align: center;
   margin-top: 50px;
@@ -508,14 +510,7 @@ position: relative;
   margin-top: 5px;
 
  }
- .dondedormir{
-  background-image: url(../img/dormir.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size:100% 150% ;
-  padding: 50px;
-  height: 100px;
- }
+ 
   
   
   .h-20 {/*header con su tamaño de height*/
@@ -1187,9 +1182,18 @@ button[type="submit"]:hover {
   color: #dedfca
 }
 .yo{
-  width:120px;
-   height: 120xp;
+  filter: drop-shadow(0 0 12px #382b2b);
+  height: 120px;
+  width: 150px;
+  padding-top: 50px;
 }
+.yo1{
+  filter: drop-shadow(0 0 12px #382b2b);
+  height: 120px;
+  width: 150px;
+  padding-top: 50px;
+}
+
 .deja{
   padding-left: 600px;
 }
@@ -1556,18 +1560,16 @@ margin-left: 25px;
   padding: 5px;
   padding-top: 14px; 
 }
-.dondecomer{
-  
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size:100% 150% ;
-  padding: 0px;
-  height: 260px;
-}
+
 .transition-opacity{
   font-size: 11px;
 }
  .yo{
+  width: 80px;
+  
+  height: 100px;
+} 
+.yo1{
   width: 80px;
   
   height: 100px;
