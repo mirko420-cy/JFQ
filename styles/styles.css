@@ -1705,7 +1705,7 @@ button[type="submit"] {
   color: #555;
 }
 .emergencia{
-  background-color: #487a8d;
+  background-color: hwb(0 80% 0%);
   text-align: center;
    font-family: sans-serif;
 }
@@ -1754,4 +1754,91 @@ textarea{
 label{
   font-size: 0.9em;
   line-height: 2;
+}
+
+
+
+
+h2.emergencia {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+  text-shadow: 0 0 12px hwb(0 17% 78%);
+  color: #382b2b;
+}
+
+/* Contenedor principal */
+#emergency-services-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Tarjetas */
+.card {
+  background-color: hwb(0 69% 17% / 0.326);
+  border-radius: 12px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  padding: 20px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  width: 80px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-content h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #666;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  #emergency-services-container {
+      flex-direction: column;
+      align-items: center;
+  }
 }
