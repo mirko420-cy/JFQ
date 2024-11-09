@@ -678,6 +678,9 @@ position: relative;
   .group1 {
     position: relative;
   }
+  .group1 {
+    position: relative;
+  }
   
   .dark\:bg-gray-800 {
     background-color: #000000;
@@ -1488,14 +1491,21 @@ margin-left: 25px;
     height: 310px;
     background-color: hwb(0 80% 0%);
     opacity: .8;
-    padding-right: 30px;
+    
   }
   .group1 {
+    position: relative;
+    height: 325px;
+    background-color: hwb(0 80% 0%);
+    opacity: .8;
+    padding-left: 0px;
+    padding-right: 30px;
+  }
+  .group2 {
     position: relative;
     height: 310px;
     background-color: hwb(0 80% 0%);
     opacity: .8;
-    padding-left: 0px;
     padding-right: 30px;
   }
   .messi {
