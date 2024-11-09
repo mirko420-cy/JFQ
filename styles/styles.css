@@ -505,6 +505,13 @@ position: relative;
   font-size: 1.25rem;
   text-shadow: hwb(0 19% 75%);
  }
+ .dormir{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  font-size: 1.25rem;
+  text-shadow: hwb(0 19% 75%);
+ }
  .p-22{
   
   margin-top: 5px;
@@ -1476,11 +1483,18 @@ margin-left: 25px;
   }
   .group {
     position: relative;
-    height: 350px;
+    height: 310px;
+    background-color: hwb(0 80% 0%);
+    opacity: .8;
+    padding-right: 30px;
   }
   .group1 {
     position: relative;
-    height: 470px;
+    height: 310px;
+    background-color: hwb(0 80% 0%);
+    opacity: .8;
+    padding-left: 0px;
+    padding-right: 30px;
   }
   .messi {
     padding-left: 100px;
@@ -1507,8 +1521,11 @@ margin-left: 25px;
     padding: 50px;
     height: 100px;
     color: #000000;
-    padding-left: 60px;
-    width: 100px;
+    padding-left: 10px;
+   
+    text-shadow: 0 0 12px hwb(0 17% 78%);
+    font-size: 15px;
+    width: 155px;
    }
   .h2 {
       padding-right: 280px;
@@ -1560,7 +1577,15 @@ margin-left: 25px;
   margin-bottom: 0px;
   font-size: 1.25rem;
   text-shadow: hwb(0 19% 75%);
-  width: 80px;
+  width: 150px;
+ }
+ .dormir{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  font-size: 1.25rem;
+  text-shadow: hwb(0 19% 75%);
+  
  }
 .dropdown-content2{
   height: 50px;
@@ -1735,6 +1760,7 @@ button[type="submit"] {
   text-shadow: 0 0 12px hwb(0 17% 78%);
   text-align: center;
    font-family: sans-serif;
+   text-decoration: underline;
 }
 
 form{
@@ -1797,8 +1823,8 @@ label{
 }
 
 /* Estilos para los bloques de servicios de emergencia */
-.emergency-box {
-  background-color: hwb(0 80% 0%);
+.emergency-box1 {
+  background-color: hwb(64 7% 8%);
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -1809,10 +1835,81 @@ label{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.emergency-box:hover {
+.emergency-box1:hover {
   transform: translateY(-10px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
+.emergency-box2 {
+  background-color: hwb(118 3% 7%);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.emergency-box2:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.emergency-box3 {
+  background-color: hwb(251 0% 0%);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.emergency-box3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Estilos para el ícono */
 .emergency-icon-wrapper {
@@ -1821,12 +1918,42 @@ label{
   align-items: center;
   height: 150px;
   margin-bottom: 15px;
+  
+}
+.emergency-icon1-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin-bottom: 15px;
+  
+}
+.emergency-icon2-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin-bottom: 15px;
+  
 }
 
 .emergency-icon {
   width: 80px;
   height: auto;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+  background-color: #f2f700;
+}
+.emergency-icon1 {
+  width: 80px;
+  height: auto;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+  background-color: #09ff00;
+}
+.emergency-icon2 {
+  width: 80px;
+  height: auto;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+  background-color: #1900ff;
 }
 
 /* Estilos para el contenido */
@@ -1852,7 +1979,7 @@ label{
   text-shadow: 0 0 12px hwb(0 17% 78%);
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #333;
+  text-decoration: underline;
 }
 
 
@@ -1890,9 +2017,10 @@ label{
 /* Estilos para los títulos y descripciones dentro de cada bloque */
 .map-box h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   margin-bottom: 15px;
-  text-shadow: 0 0 12px hwb(0 17% 78%);
+  text-shadow: 0 0 1px hwb(41 2% 64%);
+  
 }
 
 .map-box p {
