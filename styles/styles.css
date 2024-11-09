@@ -1247,13 +1247,15 @@ button[type="submit"]:hover {
   .dropdown-content4 {
       max-width: 100%;
   }
-
+  
+  
   .main-titlen1,
   .main-titlen01,
   .main-titlen02,
   .main-titlen03 {
       font-size: 30px;
   }
+  
   .sal{
     margin-bottom: 0px;
     
@@ -1628,6 +1630,7 @@ margin-left: 25px;
   
   height: 100px;
 } 
+
 .ranu{
   width: 100px;
   height: 100px;
@@ -1830,9 +1833,11 @@ label{
   padding: 20px;
   text-align: center;
   flex: 1;
-  min-width: 250px;
+  min-width: 100px;
   max-width: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .emergency-box1:hover {
@@ -1846,9 +1851,11 @@ label{
   padding: 20px;
   text-align: center;
   flex: 1;
-  min-width: 250px;
+  min-width: 100px;
   max-width: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-right: 10px;
+    padding-left: 10px;
 }
 
 .emergency-box2:hover {
@@ -1861,10 +1868,11 @@ label{
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
-  flex: 1;
+  
   min-width: 250px;
   max-width: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
 }
 
 .emergency-box3:hover {
