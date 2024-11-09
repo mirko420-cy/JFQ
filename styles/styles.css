@@ -1959,19 +1959,16 @@ label{
   width: 80px;
   height: auto;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
-  background-color: #f2f700;
 }
 .emergency-icon1 {
   width: 80px;
   height: auto;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
-  background-color: #09ff00;
 }
 .emergency-icon2 {
   width: 80px;
   height: auto;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
-  background-color: #1900ff;
 }
 
 /* Estilos para el contenido */
