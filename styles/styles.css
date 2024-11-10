@@ -515,7 +515,9 @@ position: relative;
  .p-22{
   
   margin-top: 5px;
-
+  text-shadow: 0 0 12px hwb(0 17% 78%);
+  text-shadow: 0 0 12px hwb(0 17% 78%) ; 
+  font-size: 15px;
  }
  
   
@@ -1495,7 +1497,7 @@ margin-left: 25px;
   }
   .group1 {
     position: relative;
-    height: 325px;
+    height: 330px;
     background-color: hwb(0 80% 0%);
     opacity: .8;
     padding-left: 0px;
@@ -1542,7 +1544,19 @@ margin-left: 25px;
   .h2 {
       padding-right: 280px;
   }
+  .emergency-box3{background-color:  #C2C7CA;  
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    
+    min-width: 200px;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-right: 5px;
+    padding-left: 5px;
 
+  }
   .form-control {
       padding-left: 50px;
   }
@@ -1837,7 +1851,7 @@ label{
 
 /* Estilos para los bloques de servicios de emergencia */
 .emergency-box1 {
-  background-color: hwb(64 7% 8%);
+  background-color: #ffbb7c;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -1855,7 +1869,7 @@ label{
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 .emergency-box2 {
-  background-color: hwb(118 3% 7%);
+  background-color: #f2e6b1;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -1873,7 +1887,7 @@ label{
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 .emergency-box3 {
-  background-color: hwb(251 0% 0%);
+  background-color:  #C2C7CA;  
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -1959,19 +1973,20 @@ label{
   width: 80px;
   height: auto;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
-  background-color: #f2f700;
+  /*background-color: #ffbb7c;*/
+  
 }
 .emergency-icon1 {
   width: 80px;
   height: auto;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
-  background-color: #09ff00;
+ /* background-color: #f2e6b1;*/
 }
 .emergency-icon2 {
   width: 80px;
   height: auto;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
-  background-color: #1900ff;
+ /* background-color: #1900ff;*/
 }
 
 /* Estilos para el contenido */
