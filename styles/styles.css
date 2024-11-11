@@ -55,7 +55,7 @@
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 0px;
-    background-image: url(https://elcronistachepes.com.ar/wp-content/uploads/2022/02/133825_1556810250.jpg);
+    background-image: url(../images/madera3.jpeg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -66,7 +66,7 @@
   .opaco{
     height: 100%;
     width: 100%;
-    background: linear-gradient(transparent , #ffcccc);
+   /*background: linear-gradient(transparent , #ffcccc);*/
   }
 
   .ul1{
@@ -1346,6 +1346,7 @@ button[type="submit"]:hover {
   padding-top: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+  font-size: 12px;
 }
 
   .footer-icons {
@@ -1526,6 +1527,9 @@ margin-left: 25px;
   .p-4ff,
   .p-4fff {
       padding-left: 0;
+  }
+  .tr{
+    font-size: 12px;
   }
   .dondecomer{
     background-image: url(../img/comida.jpg);
@@ -1784,7 +1788,7 @@ button[type="submit"] {
 
 }
 .emergencia{
-  background-color: hwb(0 80% 0%);
+  background-color: #f2e6b1;
   text-shadow: 0 0 12px hwb(0 17% 78%);
   text-align: center;
    font-family: sans-serif;
@@ -2007,6 +2011,7 @@ label{
 
 
 .section-title {
+  
   text-align: center;
   font-family: sans-serif;
   font-size: 24px;
@@ -2014,6 +2019,7 @@ label{
   margin-top: 20px;
   margin-bottom: 20px;
   text-decoration: underline;
+  background-color: #ffbb7c;
 }
 
 
@@ -2028,7 +2034,7 @@ label{
 
 /* Estilos para los bloques de mapas */
 .map-box {
-  background-color: hwb(0 80% 0%);
+  background-color: #C2C7CA;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
