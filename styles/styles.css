@@ -5,10 +5,22 @@
     display: inline-block;
     padding: 5px;
     
+
+
+
+
+
+    
   }
   .h44{
     font-size: 15px;
   }
+
+
+
+
+
+
   .flora{
     width:400px;
      height:300px;
@@ -1319,6 +1331,7 @@ button[type="submit"]:hover {
   padding-left: 0px;
   padding-top: 0px;
   padding-right: 0px;
+  float: right;
 }
   .footer-title {
       font-size: 20px;
@@ -2215,7 +2228,9 @@ body {
   justify-content: space-between;
 }
 
-
+.coñ {
+  float: left
+}
 
 
 
