@@ -2163,7 +2163,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
   overflow: hidden;
   flex: 1; /* Todas las tarjetas ocuparán el mismo ancho disponible */
-  max-width: 400px; /* Opcional: restringe el ancho máximo */
+  max-width: none; /* Opcional: restringe el ancho máximo */
 }
 
 /* Efecto hover en tarjetas */
