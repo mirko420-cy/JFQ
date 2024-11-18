@@ -60,6 +60,7 @@
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
   }
   
 
@@ -294,9 +295,7 @@
     box-shadow: 0 8px 16px hwb(0 17% 78%);
     padding: 5px;
   }
-  .sal{
-    width: 452px;
-  }
+
   
   .dropdown:hover .dropdown-content1 {
     display: block;
@@ -431,7 +430,12 @@
   }
   .bg-gradient-to-r {
     
-      background-image:linear-gradient(transparent , hwb(0 80% 0%));
+    background: linear-gradient(
+      180deg,
+      hwb(0 80% 0%) 0%,
+      hwb(0 69% 17% / 0.8) 50%,
+      hwb(0 50% 0% / 0.9) 100%
+    );
     }
   .img{
     background-image: url(./img/naturaleza1.jpg);
@@ -2117,10 +2121,104 @@ body {
   background-position: center;
 }
 
-.card {
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
+.card-group {
+  display: flex; /* Flexbox para alinear las tarjetas horizontalmente */
+  gap: 20px; /* Espaciado uniforme entre tarjetas */
+  justify-content: space-evenly; /* Distribuye las tarjetas uniformemente */
+  align-items: stretch; /* Asegura que las tarjetas tengan la misma altura */
 }
+
+.card.mb-3 {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos de las tarjetas en columna */
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo claro */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  overflow: hidden;
+  flex: 1; /* Todas las tarjetas ocuparán el mismo ancho disponible */
+  max-width: 1200px;
+}
+
+
+
+/* Estilo general de las tarjetas */
+.card {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos de las tarjetas en columna */
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo claro */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  overflow: hidden;
+  flex: 1; /* Todas las tarjetas ocuparán el mismo ancho disponible */
+  max-width: 400px; /* Opcional: restringe el ancho máximo */
+}
+
+/* Efecto hover en tarjetas */
+.card:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Más sombra en hover */
+}
+
+/* Estilo de las imágenes */
+.card-img-top {
+  object-fit: cover; /* Asegura que la imagen no se deforme */
+  height: 200px; /* Altura uniforme para todas las imágenes */
+  width: 100%; /* Ancho completo */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Espacia contenido dentro de la tarjeta */
+  flex-grow: 1; /* Asegura que las descripciones se ajusten a la altura disponible */
+  padding: 20px;
+}
+
+/* Encabezados */
+.card-header {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: hwb(0 60% 15%);
+  background-color: #e74c3c; /* Color rojo vibrante */
+  color: white; /* Texto blanco */
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0; /* Bordes superiores redondeados */
+}
+
+/* Textos dentro de las tarjetas */
+.card-text {
+   flex-grow: 1; /* Hace que todas las descripciones se expandan uniformemente */
+  text-align: justify; /* Justifica el texto */
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Links */
+.card-header a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card-header a:hover {
+  color: #ffcccb; /* Color más claro al pasar el mouse */
+}
+
+/* Contenedor del grupo de tarjetas */
+.card-group {
+  display: flex;
+  flex-wrap: wrap; /* Para que sea responsive */
+  justify-content: space-between;
+}
+
+
+
+
+
 
 .img-fluid {
   border-radius: 10px;
