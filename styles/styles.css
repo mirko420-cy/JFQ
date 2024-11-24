@@ -204,8 +204,8 @@
   .text-2xl.font-bold {
     color:#dedfca;
     font-style: italic;
-    margin-left: 150px;
-    margin-bottom: 40px
+    margin-left: 0px;
+    margin-bottom: 30px
   }
   .piel {
     color:#dedfca;
@@ -290,9 +290,9 @@
     /*height: 60px;*/
     display: none;
     position:absolute;
-    background-color: rgb(255, 204, 204);
+    background-color: #f7f3f3;;
     box-shadow: 0 8px 16px hwb(0 17% 78%);
-    padding: 5px;
+    
   }
   .sal{
     width: 452px;
@@ -462,9 +462,9 @@
 
 
   .img3{
-    padding-left: 20px;
-    width: 200px;
-    height: 150px;
+    padding-left: 50px;
+    width: 100px;
+    height: 140px;
   }
 
   #contenerdor-de-donde {
@@ -1588,8 +1588,9 @@ margin-left: 25px;
   }
 
   .img3{
-    width: 200px;
-    height: 150px;
+    padding-left: 10px;
+    width: 180px;
+    height: 65px;
   }
   .nuevoh1{
     color: #a08334;
