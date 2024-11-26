@@ -479,8 +479,9 @@
 
   .img3{
     padding-left: 50px;
-    width: 100px;
+    width: 190px;
     height: 140px;
+    padding-bottom: 5px;
   }
 
   #contenerdor-de-donde {
@@ -1606,14 +1607,15 @@ margin-left: 25px;
 
   .img3{
     padding-left: 5px;
-    width: 80px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
+    padding-bottom: 5px;
   }
   .nuevoh1{
     color: #a08334;
-    font-style: italic;
-    font-size: 14px;
-    padding-left: 50px;
+    font-style:normal;
+    font-size: 12px;
+    padding-left: 3px;
   }
   .text-xl {
     font-size: 12px;
