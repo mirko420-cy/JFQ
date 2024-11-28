@@ -478,10 +478,16 @@
 
 
   .img3{
-    padding-left: 50px;
-    width: 190px;
-    height: 140px;
-    padding-bottom: 5px;
+    background-color: white;      /* Fondo blanco */
+    display: inline-block;         /* Ajusta el tamaño al contenido */
+    padding: 10px;                 /* Espaciado opcional */
+    border-radius: 50%;            /* Hace el fondo circular */
+    width: 100px;                  /* Ancho fijo para el círculo */
+    height: 100px;                 /* Altura fija para el círculo */
+    display: flex;                 /* Centra la imagen */
+    justify-content: right;       /* Centra horizontalmente */
+    align-items: center;           /* Centra verticalmente */
+    overflow: hidden;              /* Recorta cualquier exceso de la imagen */
   }
 
   #contenerdor-de-donde {
