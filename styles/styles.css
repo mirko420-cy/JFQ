@@ -1,15 +1,8 @@
 
-
   .dropdown ,
   .complicado {
     display: inline-block;
-    padding: 5px;
-    
-
-
-
-
-
+    padding: 5px;    
     
   }
   .h44{
@@ -17,13 +10,9 @@
   }
 
 
-
-
-
-
-  .flora{
+.flora{
     width:400px;
-     height:300px;
+   height:300px;
   }
   .smaller-title {
     font-size: 2rem; /* Ajusta este valor a uno más pequeño */
@@ -75,7 +64,6 @@
     
   }
   
-
   .opaco{
     height: 100%;
     width: 100%;
@@ -93,14 +81,7 @@
   .mapas-de-google{
     width: 1340px;
   }
-  
-  /*carrusel*/ 
- .carousel-container {
-  position: relative;
-  /* Ancho máximo del carrusel */
-  margin: 0 auto; /* Centrado horizontal */
-  overflow: hidden; /* Ocultar las imágenes fuera del contenedor */
-}
+
 
 .carousel-slide {
   display: flex;
@@ -134,15 +115,24 @@
   right: 0;
 }
 
-  /*carrusel1*/
-  .carousel-container {
-  
-    background-color: hwb(0 69% 17% / 0.326); 
+/* Estilos generales para .carousel-container */
+.carousel-container {
   position: relative;
-  
-  margin:  10 auto;
-  overflow: hidden;
+  margin: 0 auto; /* Centrado horizontal */
+  overflow: hidden; /* Oculta contenido fuera del contenedor */
+  background-color: hwb(0 69% 17% / 0.326); /* Fondo común */
+  max-width: 1300px; /* Ancho máximo para todas las versiones */
 }
+
+/* Variantes específicas */
+.carousel-container.small-margin {
+  margin: 10px auto;
+}
+
+.carousel-container.large-margin {
+  margin: 20px auto;
+}
+
 
 .carousel-slide {
   display: flex;
@@ -171,25 +161,11 @@
   right: 0;
 }
 
-   /*carrusel2*/ 
-   .carousel-container {
-    background-color: hwb(0 69% 17% / 0.326);
-  position: relative;
-  max-width: 1300px;
-  margin: 20 auto;
-  overflow: hidden;
-  
-  /*height: 200px;*/
- 
-
-}
 
 .carousel-slide {
   display: flex;
   transition: transform 0.5s ease;
 }
-
-
 
 .prev,
 .next {
@@ -376,23 +352,6 @@
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .dark {
     --bg-color: #1f2937;
     --text-color: #f3f4f6;
@@ -477,18 +436,16 @@
   }
 
 
-  .img3{
-    background-color: white;      /* Fondo blanco */
+  .img3 {
     display: inline-block;         /* Ajusta el tamaño al contenido */
-    padding: 10px;                 /* Espaciado opcional */
-    border-radius: 50%;            /* Hace el fondo circular */
-    width: 100px;                  /* Ancho fijo para el círculo */
-    height: 100px;                 /* Altura fija para el círculo */
-    display: flex;                 /* Centra la imagen */
-    justify-content: right;       /* Centra horizontalmente */
+    padding: 0;                    /* Eliminé el espaciado */
+    width: 100px;                  /* Ancho fijo */
+    height: 100px;                 /* Altura fija */
+    display: flex;                 /* Contenedor flexible */
+    justify-content: center;        /* Alineación a la derecha */
     align-items: center;           /* Centra verticalmente */
     overflow: hidden;              /* Recorta cualquier exceso de la imagen */
-  }
+}
 
   #contenerdor-de-donde {
     background: #0011f8;
@@ -716,11 +673,6 @@ position: relative;
    /* width: 110px; cancelado*/
    margin-top: 0px
   }
-  
-  /*.p-4 { le saque el padding y width. para que no esten muy separados el texto de la imagen
-    padding: 1rem;
-    width: 400px;
-  }*/
   
   .text-center {
     text-align: center;
@@ -1064,18 +1016,11 @@ position: relative;
 .div55{
   background-color: #464b53;
 }
-.title-naturaleza{
-  
-  padding-left: 580px;
-
-}
 
 .messi{
   padding-left: 580px;
 }
-.p-4f {
-  padding-left: 480px;
-}
+
 .text-lg{
   padding-left: 585px;
 }
@@ -1085,6 +1030,9 @@ position: relative;
   font-size: 30px;
   text-decoration: none;
 }
+
+
+
 .p-4ff {
   padding-left: 440px;
 }
@@ -1242,6 +1190,34 @@ button[type="submit"]:hover {
 .auto{
   width: 400px; height: 400px;
 }
+
+
+.contendeor-naturaleza-padre{
+  text-align: center; /* Centra el contenido en línea dentro del contenedor */
+}
+
+.title-naturaleza {
+  font-family: 'Merriweather', serif;
+  display: inline-block; /* Asegura que se comporte como inline para centrado */
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  filter: drop-shadow(0 0 12px hwb(0 17% 78%));
+  text-shadow: 0 0 12px hwb(0 49% 36%);
+}
+.descripcion-naturaleza {
+  font-size: 16px;
+  margin-top: 10px;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  display: block; /* Asegura que se comporte como un bloque independiente */
+  width: fit-content; /* Ajusta el ancho al contenido */
+  margin-left: auto; /* Centra en el contenedor */
+  margin-right: auto; /* Centra en el contenedor */
+}
+
+
+
 /* nuevos codigos de media query*/
 
 
@@ -1660,9 +1636,12 @@ margin-left: 25px;
 .text-lg {
   padding-left: 100px;
 }
-.title-naturaleza{
+
+.title-naturaleza {
   font-size: 30px;
-  padding-left: 100px;
+  display: flex; /* Activa flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  text-align: center; /* Centra el texto dentro de su propio ancho */
 }
 
 .fifa{
@@ -1741,17 +1720,6 @@ button[type="submit"] {
   padding: 20px;
   font-family: sans-serif;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .formulario {
   text-align: center;
@@ -1947,45 +1915,6 @@ label{
   transform: translateY(-10px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Estilos para el ícono */
 .emergency-icon-wrapper {
@@ -2240,9 +2169,6 @@ body {
 .coñ {
   float: left
 }
-
-
-
 
 .img-fluid {
   border-radius: 10px;
