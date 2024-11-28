@@ -194,7 +194,9 @@
     color:#dedfca;
     font-style: italic;
     margin-left: 0px;
-    margin-bottom: 30px
+    margin-bottom: 10px;
+    padding-left: 100px;
+
   }
   .piel {
     color:#dedfca;
@@ -215,10 +217,7 @@
     margin-left: 5px;
     margin-bottom: 40px
   }
-  .nav1{
-    height: 70px;
-    width: 420px;
-  }
+  
   .nav88{
     height: 70px;
     width: 400px;
@@ -439,13 +438,14 @@
   .img3 {
     display: inline-block;         /* Ajusta el tamaño al contenido */
     padding: 0;                    /* Eliminé el espaciado */
-    width: 100px;                  /* Ancho fijo */
-    height: 100px;                 /* Altura fija */
+    width: 180px;                  /* Ancho fijo */
+    height: 130px;                 /* Altura fija */
     display: flex;                 /* Contenedor flexible */
     justify-content: center;        /* Alineación a la derecha */
     align-items: center;           /* Centra verticalmente */
     overflow: hidden;              /* Recorta cualquier exceso de la imagen */
-}
+padding-left: 20px;
+  }
 
   #contenerdor-de-donde {
     background: #0011f8;
@@ -1216,7 +1216,11 @@ button[type="submit"]:hover {
   margin-right: auto; /* Centra en el contenedor */
 }
 
-
+.nav1 {
+  height: 50px;
+  width: 270px;
+  padding-left: 18px;
+}
 
 /* nuevos codigos de media query*/
 
@@ -1589,8 +1593,8 @@ margin-left: 25px;
 
   .img3{
     padding-left: 5px;
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 110px;
     padding-bottom: 5px;
   }
   .nuevoh1{
