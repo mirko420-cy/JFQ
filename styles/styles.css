@@ -1025,7 +1025,7 @@ position: relative;
   padding-left: 585px;
 }
 .river{
-  color: black;
+  color: white;
   padding-left: 600px;
   font-size: 30px;
   text-decoration: none;
@@ -1035,6 +1035,7 @@ position: relative;
 
 .p-4ff {
   padding-left: 440px;
+  color: white;
 }
 .p-4fff {
   padding-left: 440px;
@@ -1220,6 +1221,7 @@ button[type="submit"]:hover {
   height: 50px;
   width: 270px;
   padding-left: 18px;
+  padding-bottom: 0px;
 }
 
 /* nuevos codigos de media query*/
@@ -1231,12 +1233,17 @@ button[type="submit"]:hover {
       height: auto;
   }
 
-  .nav88, .nav1 {
+  .nav88 {
       height: 50px;
       width: 700px;
       padding-left: 18px;
   }
-
+  .nav1 {
+    height: 50px;
+      width: 700px;
+      padding-left: 18px;
+      padding-bottom: 30px;
+  }
   .Inicio a,
   .dropdown a,
   .Contacto a {
@@ -1415,7 +1422,7 @@ margin-left: 25px;
   color: #fff; /* Color del texto del footer */
 }
 .river{
-  color: black;
+  color: white;
   padding-left: 110px;
   font-size: 30px;
   text-decoration: none;
