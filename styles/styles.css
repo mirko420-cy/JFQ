@@ -1022,11 +1022,10 @@ position: relative;
 }
 
 .text-lg{
-  padding-left: 585px;
+  padding-left: 720px;
 }
 .river{
   color: white;
-  padding-left: 600px;
   font-size: 30px;
   text-decoration: none;
 }
@@ -1034,12 +1033,9 @@ position: relative;
 
 
 .p-4ff {
-  padding-left: 440px;
   color: white;
 }
-.p-4fff {
-  padding-left: 440px;
-}
+
 .de{
   background-color: hwb(0 80% 0% / 0.209);
   text-shadow: 0 0 12px hwb(0 17% 78%);
@@ -1216,6 +1212,42 @@ button[type="submit"]:hover {
   margin-left: auto; /* Centra en el contenedor */
   margin-right: auto; /* Centra en el contenedor */
 }
+
+
+.contendeor-cultura-padre
+{
+  text-align: center;
+}
+
+.descripcion-naturaleza
+{
+  font-size: 16px;
+  margin-top: 10px;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  display: block; /* Asegura que se comporte como un bloque independiente */
+  width: fit-content; /* Ajusta el ancho al contenido */
+  margin-left: auto; /* Centra en el contenedor */
+  margin-right: auto; /* Centra en el contenedor */
+}
+
+.contendeor-esparcimiento-padre
+{
+  text-align: center
+}
+
+.descripcion-esparcimiento
+{
+  font-size: 16px;
+  margin-top: 10px;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  display: block; /* Asegura que se comporte como un bloque independiente */
+  width: fit-content; /* Ajusta el ancho al contenido */
+  margin-left: auto; /* Centra en el contenedor */
+  margin-right: auto; /* Centra en el contenedor */
+}
+
 
 .nav1 {
   height: 50px;
@@ -1423,7 +1455,6 @@ margin-left: 25px;
 }
 .river{
   color: white;
-  padding-left: 110px;
   font-size: 30px;
   text-decoration: none;
 }
@@ -1643,9 +1674,6 @@ margin-left: 25px;
 }
 .complicado-content1{
   background-color: #000000;
-}
-.text-lg {
-  padding-left: 100px;
 }
 
 .title-naturaleza {
