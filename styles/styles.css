@@ -252,7 +252,7 @@
   font-weight: bold;
   
   padding: 5px;
-  background-color: rgb(255, 204, 204);
+  background-color: #42b32f;
   border-radius: 5px;
 }
  
@@ -845,6 +845,13 @@ position: relative;
 .icon-container {
   text-align: center; /* Centrar el contenido del contenedor de iconos */
 }
+.boo{
+  
+  
+  padding-right: 300px;
+ 
+  
+}
 
 
 .icon {
@@ -1022,7 +1029,7 @@ position: relative;
 }
 
 .text-lg{
-  padding-left: 720px;
+  padding-left: 585px;
 }
 .river{
   color: white;
@@ -1255,6 +1262,60 @@ button[type="submit"]:hover {
   padding-left: 18px;
   padding-bottom: 0px;
 }
+.nav100 {
+  height: 50px;
+  width: 370px;
+  padding-left: 18px;
+  padding-bottom: 0px;
+}
+.nav1020 {
+  height: 50px;
+  width: 415px;
+  padding-left: 18px;
+  padding-bottom: 0px;
+}
+.nav1030 {
+  height: 50px;
+  width: 345px;
+  padding-left: 18px;
+  padding-bottom: 0px;
+}
+.nav1040 {
+  height: 50px;
+  width: 415px;
+  padding-left: 18px;
+  padding-bottom: 0px;
+}
+.nav1050 {
+  height: 50px;
+  width: 340px;
+  padding-left: 18px;
+  padding-bottom: 0px;
+}
+.nav1060 {
+  height: 50px;
+  width: 420px;
+  padding-left: 18px;
+  padding-bottom: 0px;
+}
+.nav1070 {
+  height: 50px;
+  width: 420px;
+  padding-left: 18px;
+  padding-bottom: 0px;
+}
+.nav1080 {
+  height: 50px;
+  width: 420px;
+  padding-left: 18px;
+  padding-bottom: 0px;
+}
+.nav1090 {
+  height: 50px;
+  width: 350px;
+  padding-left: 18px;
+  padding-bottom: 0px;
+}
 
 /* nuevos codigos de media query*/
 
@@ -1271,6 +1332,66 @@ button[type="submit"]:hover {
       padding-left: 18px;
   }
   .nav1 {
+    height: 50px;
+      width: 700px;
+      padding-left: 18px;
+      padding-bottom: 30px;
+  }
+  .nav100 {
+    height: 50px;
+      width: 700px;
+      padding-left: 18px;
+      padding-bottom: 30px;
+  }
+  .nav1020 {
+    height: 50px;
+      width: 700px;
+      padding-left: 18px;
+      padding-bottom: 30px;
+  }
+  .card-header a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 7px;
+  }
+  .nav1030 {
+    height: 50px;
+      width: 700px;
+      padding-left: 18px;
+      padding-bottom: 30px;
+  }
+  .nav1040 {
+    height: 50px;
+      width: 700px;
+      padding-left: 18px;
+      padding-bottom: 30px;
+  }
+  .nav1050 {
+    height: 50px;
+      width: 700px;
+      padding-left: 18px;
+      padding-bottom: 30px;
+  }
+  .nav1060 {
+    height: 50px;
+      width: 700px;
+      padding-left: 18px;
+      padding-bottom: 30px;
+  }
+  .nav1070 {
+    height: 50px;
+      width: 700px;
+      padding-left: 18px;
+      padding-bottom: 30px;
+  }
+  .nav1080 {
+    height: 50px;
+      width: 700px;
+      padding-left: 18px;
+      padding-bottom: 30px;
+  }
+  .nav1090 {
     height: 50px;
       width: 700px;
       padding-left: 18px;
@@ -1353,11 +1474,7 @@ button[type="submit"]:hover {
     margin-bottom: 1.5rem;
 }
 .boo{
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  float: right;
+ 
 }
   .footer-title {
       font-size: 20px;
@@ -1404,6 +1521,14 @@ button[type="submit"]:hover {
     height: 140px;
 
   }
+  .card-text {
+    flex-grow: 1; /* Hace que todas las descripciones se expandan uniformemente */
+   text-align: justify; /* Justifica el texto */
+   margin-top: 10px;
+   color: #333;
+   font-size: 6px;
+ }
+ 
   .footer-icons22 {
     display: flex;
     justify-content: center;
@@ -1510,6 +1635,11 @@ margin-left: 25px;
   
   margin-left: 21px;
 
+}
+.card:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Más sombra en hover */
+  height: 402px;
 }
 .fed1 {
   padding-left: 0px;
@@ -2117,6 +2247,7 @@ body {
   gap: 20px; /* Espaciado uniforme entre tarjetas */
   justify-content: space-evenly; /* Distribuye las tarjetas uniformemente */
   align-items: stretch; /* Asegura que las tarjetas tengan la misma altura */
+  width: 360px;
 }
 
 .card.mb-3 {
@@ -2163,6 +2294,7 @@ body {
   justify-content: space-between; /* Espacia contenido dentro de la tarjeta */
   flex-grow: 1; /* Asegura que las descripciones se ajusten a la altura disponible */
   padding: 20px;
+  height: 232px;
 }
 
 /* Encabezados */
@@ -2186,6 +2318,7 @@ body {
   text-align: justify; /* Justifica el texto */
   margin-top: 10px;
   color: #333;
+  
 }
 
 /* Links */
