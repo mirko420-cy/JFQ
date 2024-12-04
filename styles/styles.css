@@ -1355,6 +1355,7 @@ button[type="submit"]:hover {
     transition: color 0.3s ease;
     font-size: 7px;
   }
+  
   .nav1030 {
     height: 50px;
       width: 700px;
@@ -1659,10 +1660,13 @@ margin-left: 25px;
 
   
   
-  .text-lg,
+  
   .messi,
   .form-group {
       padding-left: 140px;
+  }
+  .text-lg{
+    padding-left: 100px;
   }
   .group {
     position: relative;
@@ -2328,6 +2332,7 @@ body {
   border-radius: 5px 5px 0 0; /* Bordes superiores redondeados */
 }
 
+
 /* Textos dentro de las tarjetas */
 .card-text {
    flex-grow: 1; /* Hace que todas las descripciones se expandan uniformemente */
@@ -2344,9 +2349,11 @@ body {
   transition: color 0.3s ease;
 }
 
+
 .card-header a:hover {
   color: #ffcccb; /* Color más claro al pasar el mouse */
 }
+
 
 /* Contenedor del grupo de tarjetas */
 .card-group {
