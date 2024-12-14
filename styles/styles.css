@@ -56,7 +56,11 @@
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 0px;
+<<<<<<< Updated upstream
     background-image: url(../images/madera3.jpeg);
+=======
+    background-image: url(/images/fondo.jpg);
+>>>>>>> Stashed changes
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -1986,20 +1990,29 @@ label{
   width: 80px;
   height: auto;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+<<<<<<< Updated upstream
   /*background-color: #ffbb7c;*/
   
+=======
+>>>>>>> Stashed changes
 }
 .emergency-icon1 {
   width: 80px;
   height: auto;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+<<<<<<< Updated upstream
  /* background-color: #f2e6b1;*/
+=======
+>>>>>>> Stashed changes
 }
 .emergency-icon2 {
   width: 80px;
   height: auto;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+<<<<<<< Updated upstream
  /* background-color: #1900ff;*/
+=======
+>>>>>>> Stashed changes
 }
 
 /* Estilos para el contenido */
