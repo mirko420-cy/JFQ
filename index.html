@@ -6,8 +6,6 @@
   <title>Juan Facundo Quiroga</title>
   <link rel="shortcut icon" href="./images/muni23.png">
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="script/script.js">
-  
 
 </head>
       <body class="body1" >
@@ -383,72 +381,80 @@
 </div>
 
     
-  <!-- Aquí se mostrarán los comentarios -->
-  <h2 class="formulario" style="text-align: center; font-family: sans-serif; text-shadow: 0 0 12px hwb(0 17% 78%)">Deja tu comentario...</h2>
-  <form id="comentarioForm" style="background-color: #ededed91">
+<h2 class="formulario" style="text-align: center;">Deja tu comentario...</h2>
+<form id="comentarioForm" style="background-color: #ededed91">
     <div class="form_imput" style="padding: 10px 20px;">
-      <input type="text" placeholder="Nombre Completo" style="width: 100%; box-sizing: border-box; padding: 6px 12px; border-left: 1px solid hwb(0 62% 18%);" id="nombre">
+        <input type="text" placeholder="Nombre Completo" style="width: 100%; box-sizing: border-box;" id="nombre">
     </div>
     <div class="form_imput" style="padding: 10px 20px;">
-      <input type="email" placeholder="Correo" style="width: 100%; box-sizing: border-box; padding: 6px 12px; border-left: 3px solid hwb(0 49% 36%);" id="correo">
+        <input type="email" placeholder="Correo" style="width: 100%; box-sizing: border-box;" id="correo">
     </div>
     <div class="form_imput" style="padding: 10px 20px;">
-      <input type="text" placeholder="Su mensaje" style="width: 100%; box-sizing: border-box; padding: 20px 12px; border-left: 3px solid hwb(0 49% 36%);" id="mensaje">
+        <input type="text" placeholder="Su mensaje" style="width: 100%; box-sizing: border-box;" id="mensaje">
     </div>
     <center>
-      <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 col-span-full sm:col-span-2 lg:col-span-3" type="submit">Enviar Comentario</button>
+        <button type="submit" id="submitComentario">Enviar Comentario</button>
     </center>
-  </form>
-  
+</form>
 
+<!-- Contenedor donde se mostrarán los comentarios -->
+<div class="comentario-container" id="comment-section">
+    <!-- Los comentarios se cargarán aquí -->
+</div>
 
 <script>
-document.getElementById('comentarioForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const nombre = document.getElementById('nombre').value;
-    const correo = document.getElementById('correo').value; // Agregado
-    const mensaje = document.getElementById('mensaje').value;
+    document.getElementById('submitComentario').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const nombre = document.getElementById('nombre').value;
+        const correo = document.getElementById('correo').value;
+        const mensaje = document.getElementById('mensaje').value;
 
-    fetch('/comentarios', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ nombre, correo, mensaje }) // Agregado
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Error en la red: ' + response.statusText);
-        }
-        return response.text();
-    })
-    .then(data => {
-        alert(data);
-        cargarComentarios();
-    })
-    .catch(error => {
-        console.error('Hubo un problema con la solicitud:', error);
-        alert('Error al enviar el comentario. Inténtalo de nuevo más tarde.');
+        fetch('/comentarios', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ nombre, correo, mensaje })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error en la red: ' + response.statusText);
+            }
+            return response.text();
+        })
+        .then(data => {
+            alert(data);
+            cargarComentarios();
+        })
+        .catch(error => {
+            console.error('Hubo un problema con la solicitud:', error);
+            alert('Error al enviar el comentario. Inténtalo de nuevo más tarde.');
+        });
     });
-});
 
+    function cargarComentarios() {
+        fetch('/comentarios')
+        .then(response => response.json())
+        .then(data => {
+            const listaComentarios = document.getElementById('comment-section');
+            listaComentarios.innerHTML = '';  // Limpiar los comentarios anteriores
+            data.forEach(comentario => {
+                const div = document.createElement('div');
+                div.classList.add('comentario');
+                div.innerHTML = `
+                    <strong>${comentario.nombre}</strong><br>
+                    <p>${comentario.mensaje}</p>
+                    <small>Publicado el ${new Date(comentario.fecha).toLocaleString()}</small>
+                `;
+                listaComentarios.appendChild(div);
+            });
+        });
+    }
 
-  function cargarComentarios() {
-      fetch('/comentarios')
-      .then(response => response.json())
-      .then(data => {
-          const listaComentarios = document.getElementById('comment-section');
-          listaComentarios.innerHTML = '';
-          data.forEach(comentario => {
-              const li = document.createElement('li');
-              li.textContent = `${comentario.nombre}: ${comentario.mensaje} (Publicado el ${new Date(comentario.fecha).toLocaleString()})`;
-              listaComentarios.appendChild(li);
-          });
-      });
-  }
-
-  cargarComentarios();
+    // Cargar comentarios al inicio
+    cargarComentarios();
 </script>
+
 
 
 
@@ -472,7 +478,7 @@ document.getElementById('comentarioForm').addEventListener('submit', function(e)
         </a>
       </div>
       <div class="icon-container">
-        <a href="https://www.instagram.com/juanfacundoquirogaturismoycult?igsh=MW5xZG0zbzd6enQ0MQ==" style="text-decoration: none;"> <img src="../JFQ/icon/instagram.png" alt="Email Icon" class="icon"> 
+        <a href="https://www.instagram.com/juanfacundoquirogaturismoycult?igsh=MW5xZG0zbzd6enQ0MQ==" style="text-decoration: none;"> <img src="/icon/instagram.png" alt="Email Icon" class="icon"> 
           <p class="icon-title" style="color: rgb(255, 252, 252); filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Instagram</p>
         </a>
       </div>
