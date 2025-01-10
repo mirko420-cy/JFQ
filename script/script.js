@@ -80,7 +80,7 @@ function updateSlide3(slideWidth3) {
   document.getElementById('carousel3').style.transform = `translateX(${newTransformValue3}px)`;
 }
 
-const submitButton = document.getElementById("submit-button");
+const submitButton = document.getElementById("submitComentario");
 const commentInput = document.getElementById("comment-input");
 const commentsContainer = document.getElementById("comments-container");
 
@@ -113,7 +113,7 @@ function initMap() {
 
 // Manejo de eventos y lógica de comentarios
 
-document.getElementById('comentarioForm').addEventListener('submit', function(event) {
+document.getElementById('submitComentario').addEventListener('submit', function(event) {
   event.preventDefault();
   var name = document.getElementById('nombre').value;
   var comment = document.getElementById('mensaje').value;
