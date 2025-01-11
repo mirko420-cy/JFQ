@@ -4,122 +4,432 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juan Facundo Quiroga</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    form {
-      background-color: #ededed;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      background: #f9f9f9;
-      margin: 10px 0;
-      padding: 10px;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    strong {
-      color: #007bff;
-    }
-    button {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-    .carousel {
-      margin: 20px 0;
-    }
-    .carousel img {
-      width: 100%;
-      border-radius: 8px;
-    }
-  </style>
+  <link rel="shortcut icon" href="./images/muni23.png">
+  <link rel="stylesheet" href="styles/styles.css">
+
 </head>
-<body>
-  <header>
-    <h1>Bienvenido a la página de Juan Facundo Quiroga</h1>
-    <p>Explora la historia y los logros de este personaje icónico.</p>
-  </header>
+      <body class="body1" >
+      <div class="opaco">   
+        <div class="flex flex-col min-h-screen">
+          <header class="w-full h-20 flex items-center justify-between px-6  dark:bg-gray-800" style="opacity: .8"> <!--a .px-6 le cancele el p. left y right, por el srcroll que causba-->
+            <img class="img3" src="./images/logo1white.png" alt="municipalidad">
 
-  <section>
-    <h2>Biografía</h2>
-    <p>Juan Facundo Quiroga fue un destacado caudillo argentino del siglo XIX, conocido por su liderazgo y su papel en las guerras civiles.</p>
-  </section>
 
-  <section class="carousel">
-    <h2>Galería</h2>
-    <div class="slider">
-      <div><img src="https://via.placeholder.com/800x400" alt="Imagen 1"></div>
-      <div><img src="https://via.placeholder.com/800x400" alt="Imagen 2"></div>
-      <div><img src="https://via.placeholder.com/800x400" alt="Imagen 3"></div>
+          
+          
+            
+            <h1 class="text-2xl font-bold">Turismo y cultura en Juan Facundo Quiroga.</h1>
+            <nav class="nav1">
+              <ul class="ul1">
+                <li class="Inicio"><a href="index.html" style="color: black; filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" style="color: black; filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Servicios</a>
+                    <div class="dropdown-content1">
+                      <a class="ponzio"  href="pages/donde comer.html" style="color: black;">-Donde comer</a>
+                      <a class="ponzio"  href="pages/donde dormir.html">-Donde dormir</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" style="color: black; filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)s">Atractivo</a>
+                    <div class="dropdown-content2">
+                      <a class="ponzio" href="pages/naturaleza.html">-Naturaleza</a>
+                      <a class="ponzio"  href="pages/cultura.html">-Cultura</a>
+                      <a class="ponzio"  href="pages/esparcimiento.html">-Atractivo</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" style="color: black; filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">temporada</a>
+                    <div class="dropdown-content3">
+                      <a class="ponzio"  href="pages/verano.html">-verano</a>
+                      <a class="ponzio"  href="pages/primavera.html">-Primavera</a>
+                      <a class="ponzio"  href="pages/otoño.html">-otoño</a>
+                      <a class="ponzio"  href="pages/invierno.html">-invierno</a>
+                    </div>
+                </li>
+                <li class="dropdown" style="color: black; filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)"><a href="https://wa.link/oyino6" style="text-decoration: none;color: black;"> contacto</li>
+            </ul>
+            <h1 class="nuevoh1">Turismo y cultura en Juan Facundo Quiroga.</h1>
+                  </details>
+                </li>
+              </ul>
+            </nav>
+            
+          </header>
+      
+    <div class="flex flex-1">
+      <main class="p-6 w-full">
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div>
+            <div>
+              <div class="contendeor-naturaleza-padre">
+              <a href="pages/naturaleza.html" style="text-decoration: none";>
+                <h3 class="title-naturaleza" id="titulo-natu">Naturaleza</h3>
+              </a>
+              <div class="descripcion-naturaleza">
+              <p class="p-4f opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                Disfruta de la belleza natural de Juan Facundo Quiroga.
+              </p>
+            </div>
+            </div>
+              <div class="carousel-container">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <div class="carousel-slide" id="carousel1">
+                  <div class="image-wrapper">
+
+                    <a href="pages/El elefante.html" style="text-decoration: none;">
+                      <center><div class="image-title" style="color: black; filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Malanzan</div></center>
+                      <img src="images/malanzancc.jpg" alt="Image 1">
+                    </a>
+                  </div>
+                  <a href="pages/guasamayo.html" style="text-decoration: none;">
+                    <div class="image-wrapper">
+                      <center><div class="image-title" style="color: black;filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Solca</div></center>
+                      <img src="images/solcac.jpg" alt="Image 2">
+                  </a>
+                </div>
+
+                <a href="pages/san-antonio.html" style="text-decoration: none;">
+                  <div class="image-wrapper">
+                    <center><div class="image-title" style="color: black; filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">San Antonio</div></center>
+                    <img src="images/sanantonio01.jpg" alt="Image 3">
+                </a>
+              </div>
+
+              <a href="pages/atilezx.html" style="text-decoration: none;">
+                <div class="image-wrapper">
+                  <center><div class="image-title" style="color: black; filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Atiles</div></center>
+                  <img src="images/atiles01.jpg" alt="Image 4">
+              </a>
+            </div>
+
+          </div>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
     </div>
-  </section>
+    <div>
+      <div class="contendeor-cultura-padre">
+      <a href="pages/cultura.html" style="text-decoration: none"> 
+      <h3 class ="river" style="filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Cultura</h3>
+    </a>
+    <div class="descripcion-cultura">
+      <p class="p-4ff opacity-0 group-hover:opacity-100 transition-opacity duration-200" style="filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">
+        Descubre la rica cultura y tradiciones de Juan Facundo Quiroga.
+      </p>
+    </div>
+    </div>
+      <h5 class="messi"></h5>
+      <div class="carousel-container">
+        <button class="prev" onclick="prevSlide2()">&#10094;</button>
+        <div class="carousel-slide" id="carousel2">
+          <div class="image-wrapper">
+            <a href="pages/cultura.html" style="text-decoration: none;">
+              <center><div class="image-title" style="color: black; filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Flechas</div></center>
+              <img src="images/flechas.jpg" alt="Image 5">
+          </div>
+          <div class="image-wrapper">
+            <center><div class="image-title" style="color: black; filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Artesanias</div></center>
+            <img src="images/artesanias.jpg" alt="Image 6">
+          </div>
 
-  <section>
-    <h2>Deja tu comentario</h2>
-    <form id="form-comentario">
-      <div>
-        <input type="text" name="nombre" placeholder="Nombre Completo" required style="width: 100%;">
+          <div class="image-wrapper">
+            <center><div class="image-title" style="color: black; filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Petroglifo en Guasamayo</div></center>
+            <img src="images/petroguasayo.jpg" alt="Image 7">
+
+            </a>
+          </div>
+
+          <div class="image-wrapper">
+            <a href="pages/cultura.html" style="text-decoration: none;">
+              <center><div class="image-title" style="color: black; filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Artesanias</div></center>
+              <img src="images/comida.jpg" alt="Image 8">
+            </a>
+          </div>
+        </div>
+        <button class="next" onclick="nextSlide2()">&#10095;</button>
       </div>
       <div>
-        <input type="email" name="correo" placeholder="Correo" required style="width: 100%;">
+        <div class="contendeor-esparcimeinto-padre">
+        <a href="pages/esparcimiento.html" style="text-decoration: none">
+        <h3 id="esparcimiento" class="text-lg font-medium" style="font-size: 30px; color: white; text-decoration: none;filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Actractivo</h3>
+      </a>
+      <div class="descripcion-esparcimiento">
+        <p class="p-4fff opacity-0 group-hover:opacity-100 transition-opacity duration-200" style="color:white;">
+          Descubre la rica cultura y tradiciones de Juan Facundo Quiroga.
+        </p>
+        </div>
+        </div>
+        <h5 class="messi"></h5>
+        <div class="carousel-container">
+          <button class="prev" onclick="prevSlide3()">&#10094;</button>
+          <div class="carousel-slide" id="carousel3">
+            <div class="image-wrapper">
+              <a href="pages/esparcimiento.html" style="text-decoration: none;">
+                <center><div class="image-title" style="color: black; filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Estanque en Solca</div></center>
+                <img src="images/estanque.jpg" alt="Image 9">
+            </div>
+            <div class="image-wrapper">
+              <center><div class="image-title" style="color: black; filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Título de la imagen 2</div></center>
+              <img src="images/Esparcimiento11.jpg" alt="Image 10">
+            </div>
+            <div class="image-wrapper">
+              <center><div class="image-title" style="color: black; filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Título de la imagen 3</div></center>
+              <img src="images/estanque2-0.jpg" alt="Image 11">
+              </a>
+            </div>
+            <a href="pages/esparcimiento.html" style="text-decoration: none;">
+            <div class="image-wrapper">
+              <center><div class="image-title" style="color: black; filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Título de la imagen 4</div></center>
+              <img src="images/telar.jpg" alt="Image 12">
+            </a>
+            </div>
+          </div>
+          <button class="next" onclick="nextSlide3()">&#10095;</button>
+        </div>
       </div>
-      <div>
-        <textarea name="mensaje" placeholder="Tu mensaje" required style="width: 100%;"></textarea>
+      </section>
+
+
+      <section style="margin: auto;">
+        <div id="contenedor-principal" class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+
+
+        <div  id="donde-comer" class="group2 rounded-lg overflow-hidden" style="background-color: #ffbb7c; opacity: .8;">
+
+          <a href="pages/donde comer.html"><div class="icon-container">
+            <div class="icon">
+            </a>
+              <a href="/pages/donde comer.html"></a>
+              <a href="pages/donde comer.html" style="text-decoration: none; color: #382b2b;">
+              <img class="yo1"  src="./icon/icono comida.png" alt="" style="filter: drop-shadow(0 0 12px hwb(0 17% 78%));"></a>
+            </div>
+          </div>
+          <a href="pages/donde comer.html">
+            <div class="dondecomer">          
+              <a href="pages/donde comer.html" style="text-decoration: none; color: #382b2b;">
+              <h2 class="comer" style="text-shadow: 0 0 12px hwb(0 17% 78%) ; font-family: Verdana, Geneva, Tahoma, sans-serif;">Dónde comer </h2>
+            </a>
+            <p class="p-22" >Descubre los mejores lugares para desayunar, almorzar, merendar, cenar y disfrutar de un refresco durante tu visita en Juan Facundo Quiroga.</p></div>
+          </a>
+        </div>
+
+
+
+        <div id="donde-dormir" class="group1 rounded-lg overflow-hidden" style="background-color: #ffbb7c; opacity: .8; ">
+
+          <div class="icon-container">
+            <div class="icon">
+              <a href="/pages/donde comer.html"></a>
+              <a href="pages/donde dormir.html" style="text-decoration: none; color: #382b2b;">
+              <img class="yo" src="./icon/icono hospedaje.png" alt="" style="filter: drop-shadow(0 0 12px #382b2b);"></a>
+            </div>
+          </div>
+          <a href="pages/donde dormir.html">
+            <div class="dondecomer">          
+              <a href="pages/donde dormir.html" style="text-decoration: none; color: #382b2b;">
+              <h2 class="dormir" style="text-shadow: 0 0 12px hwb(0 17% 78%) ; font-family: Verdana, Geneva, Tahoma, sans-serif;">Dónde dormir </h2>
+            </a>
+            <p class="p-22" >"Descubre los mejores lugares para hospedarte durante tu visita en Juan Facundo Quiroga.
+              Te ofrecemos una seleccion de opciones comodas y acogedora para que disfrutes de una estancia inolvidable."
+            </p></div>
+          </a>
+        </div>
       </div>
+
+      
+    </section>
+
+
+    <center> <h2 id="visitanos" style=" color: black; font-family: Verdana, Geneva, Tahoma, sans-serif; text-shadow: 0 0 12px hwb(0 17% 78%) ">VISITANOS TODO EL AÑO</h2></center>
+
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" ">
+        <div class="group rounded-lg overflow-hidden">
+          <a href="./pages/primavera.html"> <img src="./images/primavera.jpg" alt="Primavera"
+              class="w-full h-48 object-cover" width="600" height="200"
+              style="aspect-ratio: 200 / 200; object-fit: cover;" /></a>
+          <a href="./pages/primavera.html" style="text-decoration: none">
+          <center><h2 class="text-xl font-bold p-4" style="background-color: hwb(69 3% 5% / 0.699); color: black;filter: drop-shadow(0 0 12px hwb(59 18% 16%)) ;text-shadow: 0 0 12px hwb(0 49% 36%);font-family: Verdana, Geneva, Tahoma, sans-serif;">Primavera</h2></center>
+          </a>
+          <p class="p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" style="text-shadow: 8 0 12px hwb(0 17% 78%);height: 100px; background-color: hwb(66 4% 7% / 0.326);">
+            Disfruta de la belleza de la primavera en Juan Facundo Quiroga.
+          </p>
+        </div>
+        <div class="group rounded-lg overflow-hidden">
+          <a href="pages/verano.html"> <img src="images/verano.jpg" alt="Verano" class="w-full h-48 object-cover"
+              width="200" height="200" style="aspect-ratio: 200 / 200; object-fit: cover;" /></a>
+          <a href="pages/verano.html" style="text-decoration: none;">
+            <center><h2 class="text-xl font-bold p-4" style="background-color: hwb(123 7% 10% / 0.514); color: black;filter: drop-shadow(0 0 12px hwb(0 17% 78%)) ;text-shadow: 0 0 12px hwb(0 49% 36%);font-family: Verdana, Geneva, Tahoma, sans-serif;">Verano</h2></center>
+          </a>
+          <p class="p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" style="text-shadow: 0 0 12px hwb(0 17% 78%);height: 100px; background-color: hwb(108 5% 23% / 0.326);">
+            Experimenta el vibrante verano en Juan Facundo Quiroga.
+          </p>
+        </div>
+        <div class="group rounded-lg overflow-hidden">
+          <a href="./pages/otoño.html"> <img src="./images/otoño.jpg" alt="Otoño" class="w-full h-48 object-cover"
+              width="200" height="200" style="aspect-ratio: 200 / 200; object-fit: cover;" /></a>
+          <a href="./pages/otoño.html" style="text-decoration: none;">
+          <center><h2 class="text-xl font-bold p-4" style="background-color: hwb(39 1% 7% / 0.521); color: black;filter: drop-shadow(0 0 12px hwb(0 17% 78%)) ;text-shadow: 0 0 12px hwb(0 49% 36%);font-family: Verdana, Geneva, Tahoma, sans-serif;">Otoño</h2></center>
+          </a>
+          <p class="p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" style="text-shadow: 0 0 12px hwb(0 17% 78%);height: 100px; background-color: hwb(39 6% 7% / 0.315);">
+            Observa los colores cambiantes del otoño en Juan Facundo Quiroga.
+          </p>
+        </div>
+        <div class="group rounded-lg overflow-hidden">
+          <a href="pages/invierno.html"><img src="images/invierno.jpg" alt="Invierno"
+              class="w-full h-48 object-cover" width="200" height="200"
+              style="aspect-ratio: 200 / 200; object-fit: cover;" /></a>
+          <a href="pages/invierno.html" style="text-decoration: none;">
+          <center><h2 class="text-xl font-bold p-4" style="background-color: hwb(0 90% 8% / 0.61); color: black;filter: drop-shadow(0 0 12px hwb(0 17% 78%)) ;text-shadow: 0 0 12px hwb(0 49% 36%);font-family: Verdana, Geneva, Tahoma, sans-serif;">Invierno</h2></center>
+          </a>
+          <p class="p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" style="text-shadow: 0 0 12px hwb(0 17% 78%);height: 100px; background-color: hwb(0 88% 9% / 0.326);">
+            Siente la tranquilidad del invierno en Juan Facundo Quiroga.
+          </p>
+        </div>
+      </section>
+      </main>
+    </div>
+
+
+
+
+    <div class="conteiner-ubi"  >
+    <center>
+    <h1 class="Ubicación" style="color: black;">Ubicación</h1>
+    <p class="tr" style="text-shadow: 0 0 12px hwb(0 17% 78%)">
+      El departamento Juan Facundo Quiroga, ubicado en la provincia de La Rioja, Argentina, se caracteriza por su paisaje semiárido y su rica historia cultural. Con una superficie de aproximadamente 3,800 km², el departamento abarca una variedad de terrenos que van desde llanuras áridas hasta pequeñas serranías. Su población se distribuye principalmente en pequeños pueblos y localidades, siendo Malanzan su cabecera departamental.
+    </p>
+    <iframe class="mapas-de-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13707.4479645041!2d-66.61926160381412!3d-30.806504312615868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94297f586f120f59%3A0x80202b10383a8e39!2sMalanz%C3%A1n%2C%20La%20Rioja%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1721074504426!5m2!1ses-419!2sus" width="1348" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </center>
+  
+      <!-- Aquí se mostrarán los comentarios -->
+
+<center><h2 class="section-title">Mapas Geográficos</h2></center>
+
+<div class="map-container">
+  <!-- Mapa 1 -->
+  <div class="map-box" >
+    <h3 style="color: #e7690291;">Mapa geográfico del Dpto. Juan Facundo Quiroga</h3>
+    <p>Encuentra información detallada del DPT Juan Facundo Quiroga.</p>
+    <a href="https://www.facebook.com/photo/?fbid=122149588430316678&set=pcb.122149588466316678" target="_blank" class="map-link">
+      Ver mapa
+    </a>
+  </div>
+
+  <!-- Mapa 2 -->
+  <div class="map-box">
+    <h3 style="color: #e7690291;">Mapa geográfico de Malanzán</h3>
+    <p>Explora el mapa de Malanzán para conocer sus alrededores.</p>
+    <a href="https://www.facebook.com/photo/?fbid=122149588328316678&set=pcb.122149588466316678" target="_blank" class="map-link">
+      Ver mapa
+    </a>
+  </div>
+
+  <!-- Mapa 3 -->
+  <div class="map-box">
+    <h3 style="color: #e7690291;">Mapa geográfico de Guasamayo</h3>
+    <p>Descubre la región de Guasamayo y sus detalles geográficos.</p>
+    <a href="https://www.facebook.com/photo/?fbid=122149588382316678&set=pcb.122149588466316678" target="_blank" class="map-link">
+      Ver mapa
+    </a>
+  </div>
+</div>
+
+
+      
+
+    <h2 class="emergencia">Servicios de Emergencia</h2>
+    
+<div id="emergency-services-container">
+
+  <!-- Bloque 1: Farmacia -->
+  <div class="emergency-box1">
+      <a href="https://wa.me/5493804774577">
+          <div class="emergency-icon-wrapper">
+              <img class="emergency-icon" src="images/farmacia.png" alt="Icono Farmacia">
+          </div>
+          <div class="emergency-content">
+              <h3 style="text-decoration: none; color: black; text-shadow: 0 0 12px hwb(0 17% 78%);">Farmacia</h3>
+              <p  style="text-decoration: none; color: black; text-shadow: 0 0 12px hwb(0 17% 78%);"> B° Anajuacio C:Av.Belgrano</p>
+          </div>
+      </a>
+  </div>
+
+  <!-- Bloque 2: Hospital -->
+  <div class="emergency-box2">
+      <a href="https://wa.me/5493804526991">
+          <div class="emergency-icon-wrapper">
+              <img class="emergency-icon1" src="images/hospital.png" alt="Icono Hospital">
+          </div>
+          <div class="emergency-content">
+              <h3 style="text-decoration: none; color: black; text-shadow: 0 0 12px hwb(0 17% 78%);">Hospital</h3>
+              <p style="text-decoration: none; color: black; text-shadow: 0 0 12px hwb(0 17% 78%);">B° El centro C:Av.Belgrano</p>
+          </div>
+      </a>
+  </div>
+
+  <!-- Bloque 3: Policía -->
+  <div class="emergency-box3">
+      <a href="https://wa.me/5493804537046">
+          <div class="emergency-icon-wrapper">
+              <img class="emergency-icon2" src="images/policia.png" alt="Icono Policía">
+          </div>
+          <div class="emergency-content">
+              <h3 style="text-decoration: none; color: black; text-shadow: 0 0 12px hwb(0 17% 78%);">Policía</h3>
+              <p style="text-decoration: none; color: black; text-shadow: 0 0 12px hwb(0 17% 78%);">B° Centro C:Av. Los Caudillos</p>
+          </div>
+      </a>
+  </div>
+
+</div>
+
+    
+<h2 class="formulario" style="text-align: center;">Deja tu comentario...</h2>
+<form action="procesar_comentario.php" method="POST" style="background-color: #ededed91">
+  <div class="form_imput" style="padding: 10px 20px;">
+      <input type="text" name="nombre" placeholder="Nombre Completo" style="width: 100%; box-sizing: border-box;" required>
+  </div>
+  <div class="form_imput" style="padding: 10px 20px;">
+      <input type="email" name="correo" placeholder="Correo" style="width: 100%; box-sizing: border-box;" required>
+  </div>
+  <div class="form_imput" style="padding: 10px 20px;">
+      <input type="text" name="mensaje" placeholder="Su mensaje" style="width: 100%; box-sizing: border-box;" required>
+  </div>
+  <center>
       <button type="submit">Enviar Comentario</button>
-    </form>
-  </section>
+  </center>
+</form>
 
-  <section>
-    <h2>Comentarios</h2>
-    <div id="comentarios">
-      <!-- Los comentarios se cargarán aquí -->
-    </div>
-  </section>
+<section>
+  <h2>Comentarios</h2>
+  <div id="comentarios">
+    <!-- Los comentarios se cargarán aquí -->
+  </div>
+</section>
+<script>
+    document.getElementById('submitComentario').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const nombre = document.getElementById('nombre').value;
+        const correo = document.getElementById('correo').value;
+        const mensaje = document.getElementById('mensaje').value;
 
-  <footer>
-    <p>&copy; 2025 Página dedicada a Juan Facundo Quiroga. Todos los derechos reservados.</p>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('.slider').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        adaptiveHeight: true
-      });
-    });
-
-    document.getElementById('form-comentario').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(this);
-      fetch('procesar_comentario.php', {
-        method: 'POST',
-        body: formData
-      }).then(response => response.text())
-        .then(() => {
-          this.reset(); // Limpiar formulario
-          cargarComentarios(); // Recargar comentarios
+        fetch('/comentarios', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ nombre, correo, mensaje })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error en la red: ' + response.statusText);
+            }
+            return response.text();
+        })
+        .then(data => {
+            alert(data);
+            cargarComentarios();
+        })
+        .catch(error => {
+            console.error('Hubo un problema con la solicitud:', error);
+            alert('Error al enviar el comentario. Inténtalo de nuevo más tarde.');
         });
     });
 
@@ -130,9 +440,44 @@
           document.getElementById('comentarios').innerHTML = data;
         });
     }
-
     // Cargar comentarios al inicio
     cargarComentarios();
-  </script>
+</script>
+
+
+  <footer class="footer-container">
+    <h2 class="footer-title">Conoce más!</h2>
+    <p class="footer-description">De Juan Facundo Quiroga</p>
+    <p class="footer-info">Informe de la Oficina de Cultura</p>
+    <p class="footer-infoo">Horarios de atencion de 08:00 A.M a 12:00 P.M .</p>
+    <div class="footer-icons">
+      <div class="icon-container">
+        <a href="https://www.facebook.com/people/Direcci%C3%B3n-de-Turismo-y-Cultura-JFQuiroga/61559500354483/" style="text-decoration: none;">
+        <img src=".//icon/facebook.png" alt="Clock Icon" class="icon">
+        <p class="icon-title" style="color: rgb(255, 255, 255); filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Facebook</p>
+      </a>
+      </div>
+      <div class="icon-container">
+        <a href="https://www.tiktok.com/@descubrijuanfacuquiroga?_t=8rHjFLG7QxT&_r=1" style="text-decoration: none;"> <img src="./icon/tik-tok.png" alt="Map Icon" class="icon">
+        <p class="icon-title" style="color: rgb(255, 255, 255); filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">TikTok</p>
+        </a>
+      </div>
+      <div class="icon-container">
+        <a href="https://www.instagram.com/juanfacundoquirogaturismoycult?igsh=MW5xZG0zbzd6enQ0MQ==" style="text-decoration: none;"> <img src="/icon/instagram.png" alt="Email Icon" class="icon"> 
+          <p class="icon-title" style="color: rgb(255, 252, 252); filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Instagram</p>
+        </a>
+      </div>
+      <div class="icon-container">
+        <a href="https://wa.link/oyino6" style="text-decoration: none;"><img src="images/llamada-telefonica.png" alt="Phone Icon" class="icon">
+          <p class="icon-title" style="color: rgb(255, 255, 255); filter: drop-shadow(0 0 12px hwb(0 17% 78%));text-shadow: 0 0 12px hwb(0 49% 36%)">Teléfono</p>
+        </a>
+      </div>
+    </div>
+
+    <p class="anonima" > &copy; 2024 anonima Empresa. Todos los derechos reservados.</p>
+  </footer>
+  <script src="script/script.js"></script>
+</div>
 </body>
+</div>
 </html>
