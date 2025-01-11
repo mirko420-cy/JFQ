@@ -80,17 +80,9 @@ function updateSlide3(slideWidth3) {
   document.getElementById('carousel3').style.transform = `translateX(${newTransformValue3}px)`;
 }
 
-const submitButton = document.getElementById("submitComentario");
 const commentInput = document.getElementById("comment-input");
 const commentsContainer = document.getElementById("comments-container");
 
-submitButton.addEventListener("click", function() {
-  const comment = commentInput.value;
-  const commentElement = document.createElement("div");
-  commentElement.innerHTML = comment;
-  commentsContainer.appendChild(commentElement);
-  commentInput.value = "";
-});
 
 function initMap() {
   // Coordenadas del lugar
