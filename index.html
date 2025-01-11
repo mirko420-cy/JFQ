@@ -404,35 +404,6 @@
   </div>
 </section>
 <script>
-    document.getElementById('submitComentario').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const nombre = document.getElementById('nombre').value;
-        const correo = document.getElementById('correo').value;
-        const mensaje = document.getElementById('mensaje').value;
-
-        fetch('/comentarios', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ nombre, correo, mensaje })
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Error en la red: ' + response.statusText);
-            }
-            return response.text();
-        })
-        .then(data => {
-            alert(data);
-            cargarComentarios();
-        })
-        .catch(error => {
-            console.error('Hubo un problema con la solicitud:', error);
-            alert('Error al enviar el comentario. Inténtalo de nuevo más tarde.');
-        });
-    });
-
     function cargarComentarios() {
       fetch('procesar_comentario.php?action=mostrar')
         .then(response => response.text())
