@@ -398,68 +398,35 @@
 </form>
 
 <!-- Contenedor donde se mostrarán los comentarios -->
-<div class="comentario-container" id="comment-section">
-    <!-- Los comentarios se cargarán aquí -->
+<h2>Comentarios</h2>
+<div class="comentario-container" id="comentarios">
+            <!-- Los comentarios se cargarán aquí -->
 </div>
 
 <script>
-    document.getElementById('submitComentario').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const nombre = document.getElementById('nombre').value;
-        const correo = document.getElementById('correo').value;
-        const mensaje = document.getElementById('mensaje').value;
-
-        fetch('/comentarios', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ nombre, correo, mensaje })
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Error en la red: ' + response.statusText);
-            }
-            return response.text();
-        })
-        .then(data => {
-            alert(data);
-            cargarComentarios();
-        })
-        .catch(error => {
-            console.error('Hubo un problema con la solicitud:', error);
-            alert('Error al enviar el comentario. Inténtalo de nuevo más tarde.');
-        });
-    });
-
-    function cargarComentarios() {
-        fetch('/comentarios')
-        .then(response => response.json())
-        .then(data => {
-            const listaComentarios = document.getElementById('comment-section');
-            listaComentarios.innerHTML = '';  // Limpiar los comentarios anteriores
-            data.forEach(comentario => {
-                const div = document.createElement('div');
-                div.classList.add('comentario');
-                div.innerHTML = `
-                    <strong>${comentario.nombre}</strong><br>
-                    <p>${comentario.mensaje}</p>
-                    <small>Publicado el ${new Date(comentario.fecha).toLocaleString()}</small>
-                `;
-                listaComentarios.appendChild(div);
+   document.getElementById('form-comentario').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            fetch('procesar_comentario.php', {
+                method: 'POST',
+                body: formData
+            }).then(() => {
+                this.reset(); // Limpiar formulario
+                cargarComentarios(); // Recargar comentarios
             });
         });
-    }
+
+        function cargarComentarios() {
+            fetch('procesar_comentario.php?action=mostrar')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('comentarios').innerHTML = data;
+                });
+        }
 
     // Cargar comentarios al inicio
     cargarComentarios();
 </script>
-
-
-
-
-
-
   <footer class="footer-container">
     <h2 class="footer-title">Conoce más!</h2>
     <p class="footer-description">De Juan Facundo Quiroga</p>

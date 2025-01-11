@@ -30,6 +30,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
+// Mostrar todos los comentarios debajo del formulario
+// Mostrar comentarios
+if (isset($_GET['action']) && $_GET['action'] === 'mostrar') {
+    $sql = "SELECT nombreCompleto, mensaje FROM comentarios ORDER BY id DESC";
+    $resultado = $conn->query($sql);
+
+    if ($resultado->num_rows > 0) {
+        echo "<ul>";
+        while ($fila = $resultado->fetch_assoc()) {
+            echo "<li><strong>" . htmlspecialchars($fila['nombreCompleto']) . ":</strong> " . htmlspecialchars($fila['mensaje']) . "</li>";
+        }
+        echo "</ul>";
+    } else {
+        echo "<p>No hay comentarios todavía.</p>";
+    }
+    $conn->close();
+    exit();
+}
 // Cerrar conexión
 $conn->close();
 ?>
