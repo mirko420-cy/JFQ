@@ -25,7 +25,6 @@ if (isset($_GET['action']) && $_GET['action'] === 'mostrar') {
         echo "<p>No hay comentarios todavía.</p>";
     }
     $conn->close();
-    exit();
 }
 
 // Procesar formulario
@@ -48,4 +47,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $conn->close();
 }
 
+exit();
 ?>
