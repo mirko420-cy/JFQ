@@ -382,20 +382,26 @@
 
     
 <h2 class="formulario" style="text-align: center;">Deja tu comentario...</h2>
-<form action="procesar_comentario.php" method="POST" style="background-color: #ededed91">
-  <div class="form_imput" style="padding: 10px 20px;">
-      <input type="text" name="nombre" placeholder="Nombre Completo" style="width: 100%; box-sizing: border-box;" required>
+<form id="form-comentario">
+  <div>
+    <input type="text" name="nombre" placeholder="Nombre Completo" required style="width: 100%; box-sizing: border-box;">
   </div>
-  <div class="form_imput" style="padding: 10px 20px;">
-      <input type="email" name="correo" placeholder="Correo" style="width: 100%; box-sizing: border-box;" required>
+  <div>
+    <input type="email" name="correo" placeholder="Correo" required style="width: 100%; box-sizing: border-box;">
   </div>
-  <div class="form_imput" style="padding: 10px 20px;">
-      <input type="text" name="mensaje" placeholder="Su mensaje" style="width: 100%; box-sizing: border-box;" required>
+  <div>
+    <textarea name="mensaje" placeholder="Tu mensaje" required style="width: 100%; box-sizing: border-box;"></textarea>
   </div>
-  <center>
-      <button type="submit">Enviar Comentario</button>
-  </center>
+  <button type="submit">Enviar Comentario</button>
 </form>
+
+<!-- Popup para mostrar mensajes -->
+<div id="popup" class="hidden">
+  <div id="popup-content">
+    <p id="popup-message"></p>
+    <button id="popup-close">Cerrar</button>
+  </div>
+</div>
 
 <section>
   <h2>Comentarios</h2>

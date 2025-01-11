@@ -121,7 +121,36 @@ function addComment(name, comment) {
 }
 
 
+document.getElementById('form-comentario').addEventListener('submit', function (e) {
+  e.preventDefault(); // Evitar la recarga de la página
 
+  const formData = new FormData(this);
+
+  fetch('procesar_comentario.php', {
+    method: 'POST',
+    body: formData,
+  })
+    .then(response => response.text())
+    .then(message => {
+      // Mostrar el popup con el mensaje del servidor
+      const popup = document.getElementById('popup');
+      const popupMessage = document.getElementById('popup-message');
+      popupMessage.textContent = message; // Mostrar el mensaje de éxito o error
+      popup.classList.remove('hidden'); // Mostrar el popup
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      const popup = document.getElementById('popup');
+      const popupMessage = document.getElementById('popup-message');
+      popupMessage.textContent = 'Ocurrió un error. Inténtalo de nuevo.';
+      popup.classList.remove('hidden'); // Mostrar el popup
+    });
+});
+
+// Cerrar el popup
+document.getElementById('popup-close').addEventListener('click', function () {
+  document.getElementById('popup').classList.add('hidden');
+});
 
 
 
