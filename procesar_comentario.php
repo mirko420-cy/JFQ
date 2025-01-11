@@ -2,7 +2,7 @@
 // Configuración de la base de datos
 $host = "127.0.0.1:3306";
 $usuario = "u509991063_turismouser"; // Cambia esto
-$contraseña = "Turismo1337"; // Cambia esto
+$contraseña = "Turismo1338"; // Cambia esto
 $baseDatos = "u509991063_turismojfq"; // Cambia esto si es necesario
 
 // Conexión a la base de datos
