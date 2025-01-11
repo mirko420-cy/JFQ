@@ -32,31 +32,16 @@ if (isset($_GET['action']) && $_GET['action'] === 'mostrar') {
 
 // Procesar formulario
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Depuración de datos enviados
-    echo "<pre>";
-    print_r($_POST); // Imprimir datos enviados para depuración
-    echo "</pre>";
-
-    // Verificar si los campos existen y no están vacíos
-    if (isset($_POST['nombre'], $_POST['correo'], $_POST['mensaje']) && 
-        !empty($_POST['nombre']) && 
-        !empty($_POST['correo']) && 
-        !empty($_POST['mensaje'])) {
-        
-        $nombre = $conn->real_escape_string($_POST['nombre']);
-        $correo = $conn->real_escape_string($_POST['correo']);
-        $mensaje = $conn->real_escape_string($_POST['mensaje']);
-        $fecha = date('Y-m-d'); // Fecha actual
-
-        // Insertar en la base de datos
-        $sql = "INSERT INTO comentarios (nombreCompleto, correo, mensaje, fecha) VALUES ('$nombre', '$correo', '$mensaje', '$fecha')";
-        if ($conn->query($sql) === TRUE) {
-            echo "Comentario enviado correctamente.";
-        } else {
-            echo "Error al guardar el comentario: " . $conn->error;
-        }
+    $nombreCompleto = $conn->real_escape_string($_POST['nombre']);
+    $correo = $conn->real_escape_string($_POST['correo']);
+    $mensaje = $conn->real_escape_string($_POST['mensaje']);
+    $fecha = date('Y-m-d'); // Obtener la fecha actual en formato compatible con MySQL
+    // Insertar los datos en la tabla "comentarios"
+    $sql = "INSERT INTO comentarios (nombreCompleto, correo, mensaje, fecha) VALUES ('$nombreCompleto', '$correo', '$mensaje', '$fecha')";
+    if ($conn->query($sql) === TRUE) {
+        echo "Comentario enviado correctamente.";
     } else {
-        echo "Error: Todos los campos son obligatorios.";
+        echo "Error al enviar el comentario: " . $conn->error;
     }
 }
 
