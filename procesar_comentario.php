@@ -5,13 +5,14 @@ $usuario = "u509991063_turismouser"; // Cambia esto
 $contraseña = "Turismo1338"; // Cambia esto
 $baseDatos = "u509991063_turismojfq"; // Cambia esto si es necesario
 
-
+$conn = new mysqli($host, $usuario, $contraseña, $baseDatos);
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
 // Mostrar comentarios
 if (isset($_GET['action']) && $_GET['action'] === 'mostrar') {
-    $conn = new mysqli($host, $usuario, $contraseña, $baseDatos);
-    if ($conn->connect_error) {
-        die("Conexión fallida: " . $conn->connect_error);
-    }
+    
+    
     $sql = "SELECT nombreCompleto, mensaje FROM comentarios ORDER BY id DESC";
     $resultado = $conn->query($sql);
 
@@ -24,15 +25,10 @@ if (isset($_GET['action']) && $_GET['action'] === 'mostrar') {
     } else {
         echo "<p>No hay comentarios todavía.</p>";
     }
-    $conn->close();
 }
 
 // Procesar formulario
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $conn = new mysqli($host, $usuario, $contraseña, $baseDatos);
-    if ($conn->connect_error) {
-        die("Conexión fallida: " . $conn->connect_error);
-    }
     $nombreCompleto = $conn->real_escape_string($_POST['nombre']);
     $correo = $conn->real_escape_string($_POST['correo']);
     $mensaje = $conn->real_escape_string($_POST['mensaje']);
@@ -44,8 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         echo "Error al enviar el comentario: " . $conn->error;
     }
-    $conn->close();
 }
-
+$conn->close();
 exit();
 ?>
